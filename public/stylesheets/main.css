@@ -245,3 +245,9 @@ span.gene-title, span.bicluster-title, span.organism-title, span.motif-title, sp
 #item-title {
     padding-left: 25px;
 }
+
+#test.ui-tabs-nav, #test .ui-state-active {
+    background-color: #666;
+    border-color: #666
+}
+

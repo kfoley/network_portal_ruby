@@ -32,5 +32,24 @@ $(document).ready(function() {
      }
      $("#expandAll").bind('click', toggle_expand_all);
 
+
+     $(".toggle_container").hide();
+     $("span.expand_heading").toggle(function(){
+         $(this).addClass("active");
+         }, function () {
+         $(this).removeClass("active");
+     });
+     $("span.expand_heading").click(function(){
+         $(this).next(".toggle_container").slideToggle("slow");
+     });
+     $(".expand_all").toggle(function(){
+         $(this).addClass("texpanded");
+         }, function () {
+         $(this).removeClass("texpanded");
+     });
+     $(".expand_all").click(function(){
+         $(".toggle_container").slideToggle("slow");
+     });
+
 	
 });
