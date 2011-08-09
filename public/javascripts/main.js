@@ -22,34 +22,29 @@ $(document).ready(function() {
 
     addCollapsingDivListeners(true);
 
-    function toggle_expand_all() {
-        if ($('.expanded:first').is('.expanded')) {
-            $('.expanded').removeClass('expanded');
-    	}
-    	else {
-            $('.expanded').addClass('expanded');
-    	}
-     }
-     $("#expandAll").bind('click', toggle_expand_all);
 
-
-     $(".toggle_container").hide();
-     $("span.expand_heading").toggle(function(){
-         $(this).addClass("active");
-         }, function () {
-         $(this).removeClass("active");
-     });
-     $("span.expand_heading").click(function(){
-         $(this).next(".toggle_container").slideToggle("slow");
-     });
-     $(".expand_all").toggle(function(){
-         $(this).addClass("texpanded");
-         }, function () {
-         $(this).removeClass("texpanded");
-     });
-     $(".expand_all").click(function(){
-         $(".toggle_container").slideToggle("slow");
-     });
+    // from http://www.snilesh.com/resources/jquery/jquery-expand-collapse-expand-all-collapse-all/
+    $(".toggle_container").hide();
+    $("span.expand_heading").toggle(function(){
+        $(this).addClass("active");
+        }, function () {
+        $(this).removeClass("active");
+    });
+    $("span.expand_heading").click(function(){
+        $(this).next(".toggle_container").slideToggle("slow");
+    });
+    $(".expand_all").toggle(function(){
+        $(this).text("Collapse all");
+        $(this).addClass("expanded");
+	$("span.expand_heading").addClass("active");
+        }, function () {
+        $(this).text("Expand all");
+        $(this).removeClass("expanded");
+	$("span.expand_heading").removeClass("active");
+    });
+    $(".expand_all").click(function(){
+        $(".toggle_container").slideToggle("slow");
+    });
 
 	
 });

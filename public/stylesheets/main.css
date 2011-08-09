@@ -1,5 +1,3 @@
-
-
 body {
   margin: 0;
   margin-bottom: 25px;
@@ -39,6 +37,8 @@ a  {
   background-color: white;
   border: 3px solid #aaa;
   padding: 25px;
+  /* standard width is between 800px and 1024px depending on avg 
+     audience monitor size */
   width: 850px;
 }
 
@@ -204,6 +204,7 @@ span.gene-title, span.bicluster-title, span.organism-title, span.motif-title, sp
     display: block;
     /*text-align: right;*/
     max-width: 100%;
+    cursor: pointer;
 }
 
 .expanded {
@@ -251,3 +252,37 @@ span.gene-title, span.bicluster-title, span.organism-title, span.motif-title, sp
     border-color: #666
 }
 
+.expand_all {
+    background: none;
+    cursor: pointer;
+    height: 40px;
+    color: #2E4174;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.active {
+    background: url("../images/portal_icons/down_arrow.png") no-repeat;
+    height: 27px;
+}
+
+#gene-tabs {
+    width: auto;
+    height: auto;
+}
+
+#note { 
+    width: 100%; 
+    height: 50%; 
+    background-color: #f0f0f0; 
+    overflow: auto;  
+}
+
+p { 
+    padding: 0 0.5em; 
+    margin: 0; 
+}
+
+p:first-child { 
+    padding-top: 0.5em; 
+}

@@ -1,6 +1,112 @@
+<script type="text/javascript">
+
+    var div_id = "cytoscapeweb";
+
+    var options = {
+        // where you have the Cytoscape Web SWF
+        swfPath: "/cytoscapeweb/swf/CytoscapeWeb",
+        // where you have the Flash installer SWF
+        flashInstallerPath: "/cytoscapeweb/swf/playerProductInstall",
+        flashAlternateContent: "Cytoscape Web network viewer requires Flash."
+    };
+
+    var vis = new org.cytoscapeweb.Visualization(div_id, options);
+
+    // callback when Cytoscape Web has finished drawing
+    vis.ready(function() {
+    
+        // add a listener for when nodes and edges are clicked
+        vis.addListener("click", "nodes", function(event) {
+            handle_click(event);
+        });
+
+        var $link = vis.addListener("click", "edges", function(event) {
+            handle_click(event);
+        });
+
+        $(event.group).each(function() {
+        var $dialog = $('<div></div>')
+            .load($link.attr('event.group') + ' #note')
+            .dialog({
+                autoOpen: false,
+                title: $link.attr('target.data.canonicalName'),
+                width: 500,
+                height: 300
+            });
+            $link.click(function() {
+                $dialog.dialog('open');
+                return false;
+            });
+        });
+    
+        function handle_click(event) {
+            var target = event.target;
+    
+            clear();
+            print("event.group = " + event.group);
+            for (var i in target.data) {
+                var variable_name = i;
+                var variable_value = target.data[i];
+                print( "event.target.data." + variable_name + " = " + variable_value );
+            }
+        }   
+    
+        function clear() {
+            document.getElementById("note").innerHTML = "";
+        }
+    
+        function print(msg) {
+            document.getElementById("note").innerHTML += "<p>" + msg + "</p>";
+        }
+    });
+
+
+    $.ajax({
+        url: "/images/dvh_portal_files/flagella_inf_motif_union.xgmml",
+        success: function(data){
+            if (typeof data !== "string") {
+                if (window.ActiveXObject) { // IE
+                    data = data.xml;
+                }
+                else {
+                    data = (new XMLSerializer()).serializeToString(data);
+                }
+            }
+            vis.draw({
+                network: data,
+                layout:  'Preset'
+            });
+        },
+        error: function(){
+            show_msg({
+                type: "error",
+                target:"#cytoscapeweb",
+                message: "The file you specified could not be loaded. url=" + options.url,
+                heading: "File not found",
+            });
+        }
+    });
+/*
+    $.fx.speeds._default = 1000;
+    $(function() {
+        $("#note").dialog({
+            autoOpen: false,
+            show: "blind",
+            hide: "explode"
+        });
+    
+        $("#opener").click(function() {
+            $("#note").dialog("open");
+            return false;
+        });
+    });
+*/    
+
+</script>
+
 <div id="page">
   <div id="content">
-    <h1>Gene Analysis View</h1>
+    <h1>Bicluster (was gene) Analysis View</h1>
 
     <div id="gene-tabs">
       <ul>
@@ -11,17 +117,17 @@
       <!-- BEGING TABS -->
       <div id="gene-1">
 	<div class="expand_top">
-	  <div class="expand_all">test</div>
+	  <div class="expand_all">Expand All</div>
 	</div>
 	<div id="function">
-	  <span id="showhide_function-list" class="expanded showhide function-title expand_heading"><span id="item-title">Function:</span></span>
+	  <span id="function-list" class="collapsed function-title expand_heading"><span id="item-title">Function:</span></span>
 	  <div id="function-list" class="toggle_container">
 	    stuff
 	  </div>
 	</div><!-- #function -->
 	<br/>
 	<div id="homology">
-	  <span id="showhide_homology-list" class="collapsed showhide homology-title expand_heading"><span id="item-title">Homology:</span></span>
+	  <span id="homology-list" class="collapsed homology-title expand_heading"><span id="item-title">Homology:</span></span>
 	  <div id="homology-list" class="toggle_container">
 	    <div id="homology-tabs">
 	      <ul id="test">
@@ -39,7 +145,7 @@
 	</div><!-- #homology -->
 	<br/>
 	<div id="interaction">
-	  <span id="showhide_interaction-list" class="collapsed showhide interaction-title expand_heading"><span id="item-title">Interaction:</span></span>
+	  <span id="interaction-list" class="collapsed interaction-title expand_heading"><span id="item-title">Interaction:</span></span>
 	  <div id="interaction-list" class="toggle_container">
 	    <div id="interaction-tabs">
 	      <ul id="test">
@@ -57,7 +163,7 @@
 	</div><!-- #interaction -->
 	<br/>
 	<div id="network">
-	  <span id="showhide_network-list" class="collapsed showhide network-title expand_heading"><span id="item-title">Network:</span></span>
+	  <span id="network-list" class="collapsed network-title expand_heading"><span id="item-title">Network:</span></span>
 	  <div id="network-list" class="toggle_container">
 	    <div id="network-tabs">
 	      <ul id="test">
@@ -65,7 +171,12 @@
 		<li><a href="#tab-6">tfbC genetic</a></li>
 	      </ul>
 	      <div id="tab-5">
-		stuff 5
+		<div id="cytoscapeweb">
+		  &nbsp;
+		</div>
+		<div id="note">
+		  testing
+		</div>
 	      </div>
 	      <div id="tab-6">
 		stuff 6
