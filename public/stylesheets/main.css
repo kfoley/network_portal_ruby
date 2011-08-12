@@ -286,3 +286,26 @@ p {
 p:first-child { 
     padding-top: 0.5em; 
 }
+
+#network-summary {
+    margin: 0px;
+    padding: 3px 3px 0px 3px;
+    overflow: auto;
+    height: 150px;
+}
+
+#network-caption {
+    text-align: left;
+    color: blue;
+}
+
+#cols {
+    /*border: 1px black solid;*/
+    background-color: white;
+}
+
+th {
+    color:#000;
+    background-color: #ddd; 
+    background: url(http://baliga.systemsbiology.net/dvh/themes/mix_and_match/images/nav-bg-gray.gif);
+}

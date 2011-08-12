@@ -2,7 +2,10 @@ $(document).ready(function() {
     $(function() {
         $("#portal-tabs").tabs();
 	
-	$("#gene-tabs").tabs();
+	$("#gene-tabs ul").tabs({
+	    cache: true
+	    //ajaxOptions: { async: false, cache: true }
+	});
 
 	$("#function-tabs").tabs();
 
@@ -12,7 +15,10 @@ $(document).ready(function() {
 
 	$("#interaction-tabs").tabs();
 
-	$("#network-tabs").tabs();
+	$("#network-tabs ul").tabs({
+	    cache: true
+	    //ajaxOptions: { async: false, cache: true }
+	});
 
 	$("#related-tabs").tabs();
 
