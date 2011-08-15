@@ -47,7 +47,7 @@
                 print("<iframe width=530 height=500 scrolling=no src=" + svglink + ">"  + "</iframe>"  );
                 print("<iframe width=0 height=0 src=" + target.data["url"] + ">"  + "</iframe>"  );
 	    }
-                          		
+    
 	    // gene 
             if(target.data.type =="gene" ) {
                 print("<b class=\"ex\">" + "Node Type : " + "</b>"+ target.data.type + "<p>");
@@ -86,7 +86,7 @@
                     print("<li type=\"disc\">" + "<b class=\"ex\">" + "KEGG Sub Pathway 2: " + "</b>" + "<a id=" + "pathway" + " " + "target=_blank href=" + "http://www.genome.jp/kegg-bin/show_pathway?" + target.data.pathway + ">" + target.data["pathway.2"] + "</a>" + "<div class=tooltip>" + "</li>" + "<p>");
                 }
             }   
-                        
+    
    	    // regulator 
             if(target.data.type =="regulator" ) {
                 print("<b class=\"ex\">" + "Node Type : " + "</b>"+ target.data.type + "<p>");
@@ -212,6 +212,7 @@
                 layout:  'Preset'
             });
         },
+	cache: true,
         error: function(){
             show_msg({
                 type: "error",
@@ -221,8 +222,6 @@
             });
         }
     });
-
-
 
 
 </script>

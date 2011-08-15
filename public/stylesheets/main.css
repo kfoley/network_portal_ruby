@@ -309,3 +309,31 @@ th {
     background-color: #ddd; 
     background: url(http://baliga.systemsbiology.net/dvh/themes/mix_and_match/images/nav-bg-gray.gif);
 }
+
+
+.ui-tabs-hide {
+    position: absolute;
+    left: -10000px;
+    /*z-index: 1;*/
+}
+
+/* for FF issue */
+@-moz-document url-prefix() {
+    .ui-tabs-hide {
+	visibility: hidden;
+	position: static;
+	left: 0px;
+    }
+}
+
+.ui-tabs {
+    /*position: relative;*/
+    /*z-index: 2;*/
+}
+
+/*
+#network-tabs .ui-tabs-hide {
+    z-index: 1;
+}
+*/
+

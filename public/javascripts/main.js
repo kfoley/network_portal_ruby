@@ -1,8 +1,12 @@
 $(document).ready(function() {
-    $(function() {
+
+
+	console.debug("testing 3 ");
+
+//    $(function() {
         $("#portal-tabs").tabs();
 	
-	$("#gene-tabs ul").tabs({
+	$("#gene-tabs").tabs({
 	    cache: true
 	    //ajaxOptions: { async: false, cache: true }
 	});
@@ -15,16 +19,23 @@ $(document).ready(function() {
 
 	$("#interaction-tabs").tabs();
 
-	$("#network-tabs ul").tabs({
-	    cache: true
+	//$("#network-tabs").tabs({
+	//    cache: true,
 	    //ajaxOptions: { async: false, cache: true }
-	});
+	//});
+
+	    $("#network-tabs").tabs({
+	        //load: function(event, ui){
+	        //    $(ui.tab).data("cache.tabs",($(ui.panel).html() == "") ? false : true);
+	        //},
+	        //cache: true,
+	    });
 
 	$("#related-tabs").tabs();
 
 	$("#gene-function-tabs").tabs();
 
-    });
+//    });
 
     addCollapsingDivListeners(true);
 
