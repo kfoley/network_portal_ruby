@@ -310,7 +310,8 @@ th {
     background: url(http://baliga.systemsbiology.net/dvh/themes/mix_and_match/images/nav-bg-gray.gif);
 }
 
-
+/* NOTE: I commented out a line for .ui-tabs-hide in the main jquery css file 
+to make the following work how we'd like */
 .ui-tabs-hide {
     position: absolute;
     left: -10000px;
@@ -323,17 +324,17 @@ th {
 	visibility: hidden;
 	position: static;
 	left: 0px;
+	margin: -15px;
+	height: 0px;
     }
 }
 
-.ui-tabs {
-    /*position: relative;*/
-    /*z-index: 2;*/
+#cytoscapeweb {
+    width: 755px;
+    height: 550px;
 }
 
-/*
-#network-tabs .ui-tabs-hide {
-    z-index: 1;
+#cytoscapeweb2 {
+    width: 755px;
+    height: 550px;
 }
-*/
-

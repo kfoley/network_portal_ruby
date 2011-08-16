@@ -2,6 +2,7 @@
 <script type="text/javascript">
 
     var div_id = "cytoscapeweb";
+    var div_id2 = "cytoscapeweb2";
 
     var options = {
         // where you have the Cytoscape Web SWF
@@ -12,6 +13,7 @@
     };
 
     var vis = new org.cytoscapeweb.Visualization(div_id, options);
+    var vis_2 = new org.cytoscapeweb.Visualization(div_id2, options);
 
     // callback when Cytoscape Web has finished drawing
     vis.ready(function() {
@@ -195,6 +197,188 @@
 
     });
 
+    // callback when Cytoscape Web has finished drawing
+    vis_2.ready(function() {
+    
+        // add a listener for when nodes and edges are clicked
+        vis_2.addListener("click", "nodes", function(event) {
+            $("#note2").dialog({
+                autoOpen: true,
+                title: 'Selection: Nodes',
+                width: 600,
+                open: handle_click(event)
+            });
+        });
+
+        vis_2.addListener("click", "edges", function(event) {
+            $("#note2").dialog({
+                autoOpen: true,
+                title: 'Selection: Edges',
+                open: handle_click(event)
+            });
+        });
+
+        function handle_click(event) {
+            var target = event.target;
+            clear();
+
+	    // bicluster   
+            if(target.data.type== "bicluster") { 
+	        svglink=target.data["url"];
+                svglink=svglink.replace("htmls" , "svgs").replace("html", "svgz");
+		print( "<b class=\"ex\">" + "Name : " + "</b>" + target.data.canonicalName + " | " +
+		       "<b class=\"ex\">" + "Links : " + "</b>" + "<a target=_blank href=" + target.data["url"] + ">" + target.data.canonicalName + " page" + "</a>");
+                print("<iframe width=530 height=500 scrolling=no src=" + svglink + ">"  + "</iframe>"  );
+                print("<iframe width=0 height=0 src=" + target.data["url"] + ">"  + "</iframe>"  );
+	    }
+    
+	    // gene 
+            if(target.data.type =="gene" ) {
+                print("<b class=\"ex\">" + "Node Type : " + "</b>"+ target.data.type + "<p>");
+                print("<hr>");
+                print("<ul>");
+                print("<li type=\"square\">" + "<b class=\"ex\">" + "Name : " + "</b>" + "<a target=_blank href=" + "http://microbesonline.org/cgi-bin/keywordSearch.cgi?taxId=882&keyword=" + target.data.label + ">" + target.data.label + "</a>" +  " , " + "</b>" + target.data["long.name"]+"</li>");
+                print("<li type=\"square\">" + "<b class=\"ex\">" + "Homologs : " + "</b>" + "<a target=_blank href=" + "http://microbesonline.org/cgi-bin/fetchLocus.cgi?locus=" + target.data.locusId + "&disp=3" + ">" + "MicrobesOnline" + "</a>" + "</li>" + "<p>");
+                print("<hr>");
+                print("</ul>" + "<ul>");
+
+                if (target.data.TIGRRoles) {
+                    print("<li type=\"circle\">" + "<b class=\"ex\">" + "TIGR Roles : " + "</b>"+ target.data.TIGRRoles + "</li>" + "<p>");
+                } else {
+                    print("<li type=\"circle\">" + "<b class=\"ex\">" + "<font color=\"gray\">" + "TIGR Roles : " + "</b>"+ "No TIGR Roles asigned" + "</li>" + "</font>" + "<p>");
+                }
+
+                if (target.data.COG) {
+                    print("<li type=\"circle\">" + "<b class=\"ex\">" + "COG : " + "</b>" + "<a target=_blank href=" + "http://microbesonline.org/cgi-bin/keywordSearch.cgi?taxId=882&keyword=" + target.data.COG + ">" + target.data.COG + "</a>" + " at Microbes Online" +  "</li>" + "<p>");
+                } else {
+                    print("<li type=\"circle\">" + "<b class=\"ex\">" + "<font color=\"gray\">" + "COG : " + "</b>"+ "No COG categories asigned" + "</li>" + "</font>" + "<p>");
+                }
+
+                if (target.data.GO) {
+                    print("<li type=\"circle\">" + "<b class=\"ex\">" + "GO Term(s) : " + "</b>" + "<a target=_blank href=" + "http://amigo.geneontology.org/cgi-bin/amigo/term_details?term=" + target.data.GO + ">" + target.data.GO + "</a>" +  "</li>" + "<p>");
+                } else {
+                    print("<li type=\"circle\">" + "<b class=\"ex\">" + "<font color=\"gray\">" + "GO : " + "</b>"+ "No GO Terms asigned" + "</li>" + "</font>" + "<p>");
+                }
+							
+                print("</ul>" + "<ul>");
+                         	  
+                if (target.data["pathway.2"] =="NA") {
+                    print("<li type=\"disc\">" + "<b class=\"ex\">" + "<font color=\"gray\">" + "KEGG Main Pathway : " + "</b>" + "No KEGG pathway assigned" + "</li>" + "</font>" + "<p>");
+                } else {
+                    print("<li type=\"disc\">" + "<b class=\"ex\">" + "KEGG Main Pathway : " + "</b>"+ target.data["pathway.0"] + "</li>" + "<p>");
+                    print("<li type=\"disc\">" + "<b class=\"ex\">" + "KEGG Sub Pathway 1: " + "</b>"+ target.data["pathway.1"] + "</li>" + "<p>");
+                    print("<li type=\"disc\">" + "<b class=\"ex\">" + "KEGG Sub Pathway 2: " + "</b>" + "<a id=" + "pathway" + " " + "target=_blank href=" + "http://www.genome.jp/kegg-bin/show_pathway?" + target.data.pathway + ">" + target.data["pathway.2"] + "</a>" + "<div class=tooltip>" + "</li>" + "<p>");
+                }
+            }   
+    
+   	    // regulator 
+            if(target.data.type =="regulator" ) {
+                print("<b class=\"ex\">" + "Node Type : " + "</b>"+ target.data.type + "<p>");
+                print("<hr>");
+                print("<ul>");
+                print("<li type=\"square\">" +"<b class=\"ex\">" + "Name : " + "</b>" + "<a target=_blank href=" + "http://microbesonline.org/cgi-bin/keywordSearch.cgi?taxId=882&keyword=" + target.data.label + ">" + target.data.label + "</a>" +  " , " + "</b>" + target.data["long.name"] + "</li>");
+                print("<li type=\"square\">" + "<b class=\"ex\">" + "Homologs : " + "</b>" + "<a target=_blank href=" + "http://microbesonline.org/cgi-bin/fetchLocus.cgi?locus=" + target.data.locusId + "&disp=3" + ">" + "MicrobesOnline" + "</a>" + "</li>" + "<p>");
+                print("<hr>");
+                print("</ul>" + "<ul>");
+
+                if (target.data.TIGRRoles) {
+                    print("<li type=\"circle\">" + "<b class=\"ex\">" + "TIGR Roles : " + "</b>"+ target.data.TIGRRoles + "</li>" + "<p>");
+                } else {
+                    print("<li type=\"circle\">" + "<b class=\"ex\">" + "<font color=\"gray\">" + "TIGR Roles : " + "</b>"+ "No TIGR Roles asigned" + "</li>" + "</font>" + "<p>");
+                }
+
+                if (target.data.COG) {
+                    print("<li type=\"circle\">" + "<b class=\"ex\">" + "COG : " + "</b>" + "<a target=_blank href=" + "http://microbesonline.org/cgi-bin/keywordSearch.cgi?taxId=882&keyword=" + target.data.COG + ">" + target.data.COG + "</a>" + " at Microbes Online" +  "</li>" + "<p>");
+                } else {
+                    print("<li type=\"circle\">" + "<b class=\"ex\">" + "<font color=\"gray\">" + "COG : " + "</b>"+ "No COG categories asigned" + "</li>" + "</font>" + "<p>");
+                }
+
+                if (target.data.GO) {
+                    print("<li type=\"circle\">" + "<b class=\"ex\">" + "GO Term(s) : " + "</b>" + "<a target=_blank href=" + "http://amigo.geneontology.org/cgi-bin/amigo/term_details?term=" + target.data.GO + ">" + target.data.GO + "</a>" +  "</li>" + "<p>");
+                } else {
+                    print("<li type=\"circle\">" + "<b class=\"ex\">" + "<font color=\"gray\">" + "GO : " + "</b>"+ "No GO Terms asigned" + "</li>" + "</font>" + "<p>");
+                }
+							
+                print("</ul>" + "<ul>");
+                if (target.data["pathway.2"] =="NA") {
+                    print("<li type=\"disc\">" + "<b class=\"ex\">" + "<font color=\"gray\">" + "KEGG Main Pathway : " + "</b>" + "No KEGG pathway assigned" + "</li>" + "</font>" + "<p>");
+                } else {
+                    print("<li type=\"disc\">" + "<b class=\"ex\">" + "KEGG Main Pathway : " + "</b>"+ target.data["pathway.0"] + "</li>" + "<p>");
+                    print("<li type=\"disc\">" + "<b class=\"ex\">" + "KEGG Sub Pathway 1: " + "</b>"+ target.data["pathway.1"] + "</li>" + "<p>");
+                    print("<li type=\"disc\">" + "<b class=\"ex\">" + "KEGG Sub Pathway 2: " + "</b>" + "<a id=" + "pathway" + " " + "target=_blank href=" + "http://www.genome.jp/kegg-bin/show_pathway?" + target.data.pathway + ">" + target.data["pathway.2"] + "</a>" + "<div class=tooltip>" + "</li>" + "<p>");
+                }
+							
+		print("</ul>" + "<ul>");
+		print("<li type=\"square\">" + "<b class=\"ex\">" + "Regulation : " + "</b>" + "<a target=_blank href=" + "http://regtransbase.lbl.gov/cgi-bin/regtransbase?page=geneinfo;locusid=" + target.data.locusId + ">" + "RegTransBase" + "</a>" + "</li>" + "<p>");
+							
+            }
+ 
+	    // motif   
+            if(target.data.type== "motif") { 
+                print("<b class=\"ex\">" + "Type : " + "</b>"+ target.data.type + "<p>");
+                print("<ul>");
+                print( "<li>" + "<b class=\"ex\">" + "Name : " + "</b>" + target.data.canonicalName + "</li>" + "<p>");
+                print( "<li>" + "<b class=\"ex\">" + "Consensus : " + "</b>"  + target.data.consensus + "</li><li>" +
+                       "<b class=\"ex\">" + "E value : " + "</b>" + target.data["e.value"] + "</li><li>" + 
+                       "<b class=\"ex\">" + "# of Sites : " + "</b>" + target.data["n.sites"] + "<p>" + "</li><hr>" +
+                       "<a target=_blank href=" + target.data.imgURL + ">" + "<img align=left src=" + target.data.imgURL + ">" + "</a>");
+                print("</li></ul>");
+            }
+                           
+	    // edge   
+            if(event.group == "edges") { 
+                print("<ul>");
+		print( "<b class=\"ex\">" + "Name : " + "</b>" + target.data.canonicalName + "<p>");
+
+		if (target.data.interaction=="motif"){
+                    print("<ul>" + "<b class=\"ex\">" + "E value : " + "</b>" + target.data["e.value"] + "</li><li>" + 
+                          "<b class=\"ex\">" + "# of Sites : " + "</b>" + target.data.nsites + "</li><li>" +
+                          "<b class=\"ex\">" + "Llr : " + "</b>" + target.data.llr +  "</li><li>" +
+                          "<b class=\"ex\">" + "Width : " + "</b>" + target.data.width + "<li></ul>" + "<p>" );
+                } else {
+                    print("<ul>");
+                    print("<hr>");
+
+                    if (target.data.interaction =="down-regulates"){
+                        print("<b class=\"ex\">"  + "Interaction : " + "</b>" + "<font color=\"green\">"+ target.data.interaction + "</font>" + "<p>");
+                    }
+
+                    if (target.data.interaction =="up-regulates"){
+                        print("<b class=\"ex\">"  + "Interaction : " + "</b>" + "<font color=\"red\">"+ target.data.interaction + "</font>" + "<p>");
+                    }
+
+                    if (target.data.interaction =="combines"){
+                        print("<b class=\"ex\">"  + "Interaction : " + "</b>" + "<font color=\"orange\">"+ target.data.interaction + "</font>" + "<p>");
+                    }
+
+                    if (target.data.weight){
+                        print("<ul>");
+                        print( "<b class=\"ex\">" + "Inferelator Weight : " + "</b>" + target.data.weight + "<p>");
+                    }
+	        }
+            }
+            
+	    //AND-GATE
+            if(target.data["Matching.Attribute"]) {
+                print("<b class=\"ex\">" + "Type : " + "</b>"+ "Logic gate" + "<p>");
+                print("<ul>");
+                print("<li>" + "<b class=\"ex\">" + "Name : " + "</b>" + target.data.canonicalName + "</li></ul>" + "<p>");
+            }
+
+        }   
+
+        function clear() {
+            document.getElementById("note2").innerHTML = "";
+
+        }
+    
+        function print(msg) {
+            document.getElementById("note2").innerHTML += "<p>" + msg + "</p>";
+        }
+    
+
+    });
+
 
     $.ajax({
         url: "/images/dvh_portal_files/flagella_inf_motif_union.xgmml",
@@ -217,6 +401,34 @@
             show_msg({
                 type: "error",
                 target:"#cytoscapeweb",
+                message: "The file you specified could not be loaded. url=" + options.url,
+                heading: "File not found",
+            });
+        }
+    });
+
+
+    $.ajax({
+        url: "/images/dvh_portal_files/aminoacid_metabolism.xgmml",
+        success: function(data){
+            if (typeof data !== "string") {
+                if (window.ActiveXObject) { // IE
+                    data = data.xml;
+                }
+                else {
+                    data = (new XMLSerializer()).serializeToString(data);
+                }
+            }
+            vis_2.draw({
+                network: data,
+                layout:  'Preset'
+            });
+        },
+	cache: true,
+        error: function(){
+            show_msg({
+                type: "error",
+                target:"#cytoscapeweb2",
                 message: "The file you specified could not be loaded. url=" + options.url,
                 heading: "File not found",
             });
@@ -289,8 +501,8 @@
 	  <div id="network-list" class="toggle_container">
 	    <div id="network-tabs">
 	      <ul id="test" class="tabs">
-		<li><a href="#tab-5">tbpC protein-protein</a></li>
-		<li><a href="#tab-6">tfbC genetic</a></li>
+		<li><a href="#tab-5">Overview Network</a></li>
+		<li><a href="#tab-6">Bicluster 0223</a></li>
 	      </ul>
 	      <div id="tab-5" class="pane">
 		<div id="network-summary">
@@ -342,7 +554,55 @@
 		</div>
 	      </div>
 	      <div id="tab-6" class="pane">
-		stuff 6
+		<div id="network-summary">
+		  <table> 
+		    <caption id="network-caption">Functional enrichment of Flagellar Assembly pathway in D. vulgaris regulatory network </caption>
+		    <colgroup id="cols" span="5"></colgroup>
+		    <tr>
+		      <th>bicluster</th>
+		      <th>Bonferroni cor. pvalue</th>
+		      <th> KEGG sub pathway 1</th>
+		      <th> KEGG sub pathway 2</th>
+		      <th> KEGG main pathway</th>
+		    </tr> 
+		    <tr>
+		      <td>bicluster_0286</td>
+		      <td>6.498911e-15	</td>
+		      <td>Flagellar assembly	</td>
+		      <td>Cell Motility	</td>
+		      <td>Cellular Processes</td>
+		    </tr> 
+		    <tr>
+		      <td>bicluster_0184</td>
+		      <td>	1.353184e-27</td>
+		      <td>	Flagellar assembly</td>
+		      <td>	Cell Motility</td>
+		      <td>	Cellular Processes</td>
+		    </tr> 
+		    <tr>
+		      <td>bicluster_0125</td>
+		      <td>	1.078040e-20</td>
+		      <td>	Flagellar assembly</td>
+		      <td>	Cell Motility</td>
+		      <td>	Cellular Processes</td>
+		    </tr>
+		    <tr>
+		      <td>bicluster_0022</td>
+		      <td>	6.186446e-13</td>
+		      <td>	Flagellar assembly</td>
+		      <td>	Cell Motility</td>
+		      <td>	Cellular Processes</td>
+		    </tr> 
+		  </table> 
+		</div> 
+		<div id="cytoscapeweb2">
+
+		</div>
+		<div id="note2">
+
+		</div>
+
+<!--stuff for tab 6-->
 	      </div>
 	    </div>
 	  </div>

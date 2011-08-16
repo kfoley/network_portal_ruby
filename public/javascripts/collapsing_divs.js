@@ -19,7 +19,7 @@ function addCollapsingDivListeners(openMultiple) {
 		var childID = "#"+childName;
 		var parentID = "#showhide_"+toShowHide[i];
 		var child = $(childID);
-		
+
 		if (child.length != 0) {
 			if (first)
 				first = false;

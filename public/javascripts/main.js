@@ -1,8 +1,6 @@
 $(document).ready(function() {
 
 
-	console.debug("testing 3 ");
-
 //    $(function() {
         $("#portal-tabs").tabs();
 	
@@ -19,18 +17,18 @@ $(document).ready(function() {
 
 	$("#interaction-tabs").tabs();
 
-	//$("#network-tabs").tabs({
-	//    cache: true,
-	    //ajaxOptions: { async: false, cache: true }
-	//});
+	$("#network-tabs").tabs({
+	    cache: true
+	});
 
+/*
 	    $("#network-tabs").tabs({
 	        //load: function(event, ui){
 	        //    $(ui.tab).data("cache.tabs",($(ui.panel).html() == "") ? false : true);
 	        //},
 	        //cache: true,
 	    });
-
+*/
 	$("#related-tabs").tabs();
 
 	$("#gene-function-tabs").tabs();
@@ -44,8 +42,10 @@ $(document).ready(function() {
     $(".toggle_container").hide();
     $("span.expand_heading").toggle(function(){
         $(this).addClass("active");
+	//console.debug("test!! " + $('#network-tabs').children('div').css('backgroundColor','#0ff')); //addClass("ui-tabs-hide"));
         }, function () {
         $(this).removeClass("active");
+	//$('#network-tabs').children('div').addClass("ui-tabs-hide");
     });
     $("span.expand_heading").click(function(){
         $(this).next(".toggle_container").slideToggle("slow");
