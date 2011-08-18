@@ -1,5 +1,5 @@
 set :application, "network_portal"
-set :repository,  "git://github.com/cbare/network_portal.git"
+set :repository,  "git://github.com/kfoley/network_portal.git"
 
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
