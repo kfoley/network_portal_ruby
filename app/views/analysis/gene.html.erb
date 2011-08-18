@@ -64,7 +64,9 @@
             //if (len > 1) {
                 //table_start  = "<table><caption id=\"network-caption\">Summary view of network </caption><colgroup id=\"cols\" span=\"9\"></colgroup>"
             //}
+	    var bi_array = [];
 
+                        var all_genes = [];
             for (var p in target) {
                 // RENDER DIFFERENT INFO AND FORMAT FOR SINGLE ITEM VIEW
                 if (len == 1) {
@@ -218,6 +220,7 @@
                     print("NAME = " + target[p].data.canonicalName + "; TYPE = " + target[p].data.type);
 	                var bi_data = {};                    
 	                var gene_data = {};
+
 	            // bicluster   
                     if(target[p].data.type== "bicluster") { 
 
@@ -225,7 +228,7 @@
 	                bi_data["Short Name"] = target[p].data["short.name"];
 	                bi_data["Long Name"] = target[p].data["long.name"];
 
-	                items["Bicluster"].push(bi_data);
+	                items["Biclusters"] = bi_array.push(bi_data);
 /*
 	                bicluster_title = "<tr>Biclusters</tr>";
 	                svglink=target[p].data["url"];
@@ -239,13 +242,15 @@
 
 	            // gene
                     if(target[p].data.type =="gene" ) {
-
+	                var gene_array = [];
 	                gene_data["Name"] = target[p].data.label;
 	                gene_data["Short Name"] = target[p].data["short.name"];	   
 	                gene_data["Long Name"] = target[p].data["long.name"];
 	                gene_data["COG"] = target[p].data.COG;
 	                gene_data["TIGR"] = target[p].data.TIGRRoles;
-	                items["Genes"].push(gene_data);
+	                gene_array = gene_data;
+	                all_genes.push(gene_array);
+	                items["Genes"] = all_genes; //gene_array.push(gene_data);
 	                //gene_title = "<tr>Genes</tr>";
 	            }
 
@@ -269,9 +274,12 @@
 	                and_gate_title = "<tr>AND-Gate</tr>";
 	            }
 
-	    console.debug("items struct = " + items.toSource());
-	    console.debug("biclu struct = " + bi_data.toSource());
-	    console.debug("genes struct = " + gene_data.toSource());
+	    //console.debug("items struct = " + items.toSource());
+	    //console.debug("biclu struct = " + bi_data.toSource());
+	    //console.debug("genes struct = " + gene_data.toSource());
+	    //console.debug("biclu array struct = " + bi_array.toSource());
+	    //console.debug("genes array struct = " + gene_array.toSource());
+	    //console.debug("all genes array struct = " + all_genes.toSource());
 
                 }
 
