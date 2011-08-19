@@ -7,108 +7,185 @@
 
     <div id="portal-tabs">
       <ul>
-	<li><a href="#gene-results">Bicluster:</a></li>
 	<li><a href="#network-results">Network:</a></li>
-	<li><a href="#function-results">Function:</a></li>
+	<li><a href="#bicluster-results">Bicluster:</a></li>
+	<li><a href="#regulator-results">Regulators:</a></li>
 	<li><a href="#motif-results">Motif:</a></li>
       </ul>
 
-      <!-- GENE TAB -->
-      <div id="gene-results">
-	<!--<a href="#" id="expandAll">[Expand All]</a>-->
-	<section id="organism" class="title">
-	  <h4>Organism</h4>
-	</section>
-	<section id="match-count" class="title">
-	  <h4># of matching genes</h4>
-	</section>
-	<section id="gene-view" class="title">
-	  <h4>Analyze results with gene view</h4>
-	</section>
-	<section id="add-to-cart" class="title">
-	  <h4>Add to analysis cart</h4>
-	</section>
-	<div id="gene-group-1">
-	  <section id="organism">
-	    <span id="showhide_gene-list-1" class="expanded showhide gene-title"><span id="item-title">H.salinarum</span></span>
-	    <div id="gene-list-1">
-	      gene 1
-	      <br />
-	      gene 2
-	      <br />
-	      gene 3
-	    </div>
-	  </section>
-	  <section id="match-count">
-	    <span class="row-title">13</span>
-	  </section>
-	  <section id="gene-view">
-	    <span id="icon"><%= link_to image_tag("portal_icons/analyze_gene.png", :mouseover => "portal_icons/analyze_gene_hover.png"), {:controller => :analysis, :action => :gene} %></span>
-	  </section>
-	  <section id="add-to-cart">
-	    <span id="icon"><%= link_to image_tag("portal_icons/cart.png", :mouseover => "portal_icons/cart_hover.png"), {:action => :search} %></span>
-	  </section>
-	</div>
-	<br />
-	<div id="gene-group-2">
-	  <section id="organism">
-	    <span id="showhide_gene-list-2" class="collapsed showhide gene-title"><span id="item-title">H.volcanii</span></span>
-	    <div id="gene-list-2">
-	      gene a
-	      <br />
-	      gene b
-	      <br />
-	      gene c
-	    </div>	  
-	  </section>
-	  <section id="match-count">
-	    <span class="row-title">7</span>
-	  </section>
-	  <section id="gene-view">
-	    <%= link_to image_tag("portal_icons/analyze_gene.png", :mouseover => "portal_icons/analyze_gene_hover.png"), {:controller => :analysis, :action => :gene} %>
-	  </section>
-	  <section id="add-to-cart">
-	    <span id="icon"><%= link_to image_tag("portal_icons/cart.png", :mouseover => "portal_icons/cart_hover.png"), {:action => :search} %></span>
-	  </section>
-	</div>
-      </div><!-- END GENE TAB -->
-
       <!-- NETWORK TAB -->
       <div id="network-results">
-	<section id="organism" class="title">
+	<section id="function"  class="title"> <!--id="organism"-->
+	  <h4>Matching organism</h4>
+	</section>
+	<section id="function" class="title">
+	  <h4>Matching Functions</h4>
+	</section>
+	<section id="function"  class="title"> <!--id="function-view"-->
+	  <h4>Analyze results with network view</h4>
+	</section>
+	<section id="function" class="title">
+	  <h4># of Biclusters</h4>
+	</section>
+	<section id="function" class="title">
+	  <h4># of Regulators</h4>
+	</section>
+	<section id="function" class="title">
+	  <h4>p-value</h4>
+	</section>
+	<section id="function"  class="title"> <!--id="add-to-cart"-->
+	  <h4>Add to analysis cart</h4>
+	</section>
+	<div id="organism-group-1">
+	  <section id="organism" class="row-item">
+	    <span id="showhide_organism-list-1" class="expanded showhide organism-title"><span id="item-title">Disulfovibrio</span></span>
+	  </section>
+	  <div id="organism-list-1">
+	    <section id="organism" class="row-item">
+	      <div id="organism-list-1">
+		<span id="cell-item">Flagellar Assembly</span>
+		<span id="cell-item">Nitrogen Metabolism</span>
+	      </div>
+	    </section>
+	    <section id="function-view" class="row-item">
+	      <span id="icon"><%= link_to image_tag("portal_icons/analyze_nework.png", :mouseover => "portal_icons/analyze_nework_hover.png"), {:controller => :analysis, :action => :function} %></span>
+	      <span id="icon"><%= link_to image_tag("portal_icons/analyze_nework.png", :mouseover => "portal_icons/analyze_nework_hover.png"), {:controller => :analysis, :action => :function} %></span>
+	    </section>
+	    <section id="function" class="row-item">
+	      <span id="cell-item">4</span>
+	      <span id="cell-item">5</span>
+	    </section>
+	    <section id="function" class="row-item">
+	      <span id="cell-item">3</span>
+	      <span id="cell-item">7</span>
+	    </section>
+	    <section id="function" class="row-item">
+	      <span id="cell-item">0.123</span>
+	      <span id="cell-item">0.456</span>
+	    </section>
+	    <section id="add-to-cart" class="row-item">
+	      <span id="icon"><%= link_to image_tag("portal_icons/cart.png", :mouseover => "portal_icons/cart_hover.png"), {:action => :search} %></span>
+	      <span id="icon"><%= link_to image_tag("portal_icons/cart.png", :mouseover => "portal_icons/cart_hover.png"), {:action => :search} %></span>
+	    </section>
+	  </div>
+	</div>
+	<br />
+	<div id="organism-group-2">
+	  <section id="organism" class="row-item">
+	    <span id="showhide_organism-list-2" class="collapsed showhide organism-title"><span id="item-title">Halobacterium</span></span>
+	  </section>
+	  <div id="organism-list-2">
+	    <section id="organism" class="row-item">
+	      <div id="organism-list-2">
+		<span id="cell-item">Bacterial Secretion</span>
+	      </div>	  
+	    </section>
+	    <section id="function-view" class="row-item">
+	      <span id="icon"><%= link_to image_tag("portal_icons/analyze_nework.png", :mouseover => "portal_icons/analyze_nework_hover.png"), {:controller => :analysis, :action => :function} %></span>
+	    </section>
+	    <section id="function" class="row-item">
+	      <span id="cell-item">4</span>
+	    </section>
+	    <section id="function" class="row-item">
+	      <span id="cell-item">3</span>
+	    </section>
+	    <section id="function" class="row-item">
+	      <span id="cell-item">0.123</span>
+	    </section>
+	    <section id="add-to-cart" class="row-item">
+	      <span id="icon"><%= link_to image_tag("portal_icons/cart.png", :mouseover => "portal_icons/cart_hover.png"), {:action => :search} %></span>
+	    </section>
+	  </div>
+	</div>
+      </div><!-- END NETWORK TAB -->
+
+      <!-- BICLUSTER TAB -->
+      <div id="bicluster-results">
+	<section id="organism" class="title first">
 	  <h4>Organism</h4>
 	</section>
-	<section id="match-count" class="title">
-	  <h4># of matching biclusters</h4>
+	<section id="bicluster" class="title">
+	  <h4>Bicluster Name</h4>
 	</section>
+	<section id="bicluster" class="title">
+	  <h4># of genes</h4>
+	</section>
+	<section id="bicluster" class="title">
+	  <h4># of arrays</h4>
+	</section>
+	<section id="bicluster" class="title">
+	  <h4>score</h4>
+	</section>
+	<section id="bicluster" class="title">
+	  <h4>residual</h4>
+	</section>
+	<section id="bicluster" class="title">
+	  <h4>profile</h4>
+	</section>
+	<section id="bicluster" class="title">
+	  <h4>motif 1</h4>
+	</section>
+	<section id="bicluster" class="title">
+	  <h4>motif 2</h4>
+	</section>
+	<section id="bicluster" class="title">
+	  <h4>genes</h4>
+	</section>
+	<section id="bicluster" class="title">
+	  <h4>network</h4>
+	</section>
+<!--
 	<section id="network-view" class="title">
 	  <h4>Analyze results with network view</h4>
 	</section>
 	<section id="add-to-cart" class="title">
 	  <h4>Add to analysis cart</h4>
 	</section>
+-->
 	<div id="bicluster-group-1">
 	  <section id="organism">
-	    <span id="showhide_bicluster-list-1" class="collapsed showhide bicluster-title"><span id="item-title">H.salinarum</span></span>
-	    <div id="bicluster-list-1">
-	      gene 1
-	      <br />
-	      gene 2
-	      <br />
-	      gene 3
-	    </div>
+	    <span id="showhide_bicluster-list-1" class="collapsed showhide bicluster-title"><span id="item-title">Disulfovibrio</span></span>
 	  </section>
-	  <section id="match-count">
-	    <span class="row-title">13</span>
-	  </section>
-	  <section id="network-view">
-	    <span id="icon"><%= link_to image_tag("portal_icons/analyze_nework.png", :mouseover => "portal_icons/analyze_nework_hover.png"), {:controller => :analysis, :action => :network} %></span>
-	  </section>
-	  <section id="add-to-cart">
-	    <span id="icon"><%= link_to image_tag("portal_icons/cart.png", :mouseover => "portal_icons/cart_hover.png"), {:action => :search} %></span>
-	  </section>
+	  <div id="bicluster-list-1">
+	    <section id="organism" class="row-item">
+	      <div id="organism-list-2">
+		<span id="cell-item">Bicluster 022</span>
+		<span id="cell-item">Bicluster 211</span>
+	      </div>	  
+	    </section>
+	    <section id="bicluster">
+	      <span id="cell-item">13</span>
+	      <span id="cell-item">13</span>
+	    </section>
+	    <section id="bicluster">
+	      <span id="cell-item">13</span>
+	      <span id="cell-item">13</span>
+	    </section>
+	    <section id="bicluster">
+	      <span id="cell-item">13</span>
+	      <span id="cell-item">13</span>
+	    </section>
+	    <section id="bicluster">
+	      <span id="cell-item">13</span>
+	      <span id="cell-item">13</span>
+	    </section>
+	    <section id="bicluster">
+	      <span id="cell-item">13</span>
+	      <span id="cell-item">13</span>
+	    </section>
+
+<!--
+	    <section id="network-view">
+	      <span id="icon"><%= link_to image_tag("portal_icons/analyze_nework.png", :mouseover => "portal_icons/analyze_nework_hover.png"), {:controller => :analysis, :action => :network} %></span>
+	    </section>
+	    <section id="add-to-cart">
+	      <span id="icon"><%= link_to image_tag("portal_icons/cart.png", :mouseover => "portal_icons/cart_hover.png"), {:action => :search} %></span>
+	    </section>
+-->
+	  </div>
 	</div>
 	<br />
+<!--
 	<div id="bicluster-group-2">
 	  <section id="organism">
 	    <span id="showhide_bicluster-list-2" class="collapsed showhide bicluster-title"><span id="item-title">H.volcanii</span></span>
@@ -130,35 +207,72 @@
 	    <span id="icon"><%= link_to image_tag("portal_icons/cart.png", :mouseover => "portal_icons/cart_hover.png"), {:action => :search} %></span>
 	  </section>
 	</div>
-	<p><a href="/network">view network</a></p>
-      </div><!-- END NETWORK TAB -->
+-->
 
-      <!-- FUNCTION TAB -->
-      <div id="function-results">
-	<section id="function" class="title">
-	  <h4>Matching Function</h4>
-	</section>
+      </div><!-- END BICLUSTER TAB -->
+
+
+      <!-- REGULATORS TAB -->
+      <div id="regulator-results">
 	<section id="organism" class="title">
-	  <h4>Matching organism</h4>
+	  <h4>Organism</h4>
 	</section>
+	<section id="function" class="title">
+	  <h4>Regulator Name</h4>
+	</section>
+	<section id="function" class="title">
+	  <h4>Long Name</h4>
+	</section>
+	<section id="function" class="title">
+	  <h4>Interaction</h4>
+	</section>
+	<section id="function" class="title">
+	  <h4>Target</h4>
+	</section>
+	<section id="function" class="title">
+	  <h4>Weight</h4>
+	</section>
+	<section id="function" class="title">
+	  <h4>RegTransBase Link</h4>
+	</section>
+<!--
 	<section id="function-view" class="title">
 	  <h4>Analyze results with function view</h4>
 	</section>
 	<section id="add-to-cart" class="title">
 	  <h4>Add to analysis cart</h4>
 	</section>
-	<div id="organism-group-1">
-	  <section id="function" class="row-item">
-	    <span id="showhide_organism-list-1" class="collapsed showhide organism-title"><span id="item-title">transcription</span></span>
+-->
+	<div id="organism-group-3">
+	  <section id="organism" class="row-item">
+	    <span id="showhide_organism-list-3" class="collapsed showhide organism-title"><span id="item-title">Disulfovibrio</span></span>
 	  </section>
-	  <div id="organism-list-1">
+	  <div id="organism-list-3">
 	    <section id="organism" class="row-item">
-	      <div id="organism-list-1">
-		<span id="cell-item">H.salinarum</span>
-		<span id="cell-item">H.volcanii</span>
-		<span id="cell-item">H.marismortui</span>
+	      <div id="organism-list-3">
+		<span id="cell-item">DVU2799</span>
 	      </div>
 	    </section>
+	    <section id="function" class="row-item">
+	      <span id="cell-item">Transcriptional Regulator MarR family (TIGR)</span>
+	    </section>
+	    <section id="function" class="row-item">
+	      <span id="cell-item">up regulates</span>
+	      <span id="cell-item">down regulates</span>
+	    </section>
+	    <section id="function" class="row-item">
+	      <span id="cell-item">bicluster 022</span>
+	      <span id="cell-item">bicluster 030</span>
+	    </section>
+	    <section id="function" class="row-item">
+	      <span id="cell-item">0.2</span>
+	      <span id="cell-item">-0.4</span>
+	    </section>
+	    <section id="function" class="row-item">
+	      <span id="cell-item">NA</span>
+	      <span id="cell-item">NA</span>
+	    </section>	    
+<!--
 	    <section id="function-view" class="row-item">
 	      <span id="icon"><%= link_to image_tag("portal_icons/analyze_function.png", :mouseover => "portal_icons/analyze_function_hover.png"), {:controller => :analysis, :action => :function} %></span>
 	      <span id="icon"><%= link_to image_tag("portal_icons/analyze_function.png", :mouseover => "portal_icons/analyze_function_hover.png"), {:controller => :analysis, :action => :function} %></span>
@@ -169,16 +283,18 @@
 	      <span id="icon"><%= link_to image_tag("portal_icons/cart.png", :mouseover => "portal_icons/cart_hover.png"), {:action => :search} %></span>
 	      <span id="icon"><%= link_to image_tag("portal_icons/cart.png", :mouseover => "portal_icons/cart_hover.png"), {:action => :search} %></span>
 	    </section>
+-->
 	  </div>
 	</div>
 	<br />
-	<div id="organism-group-2">
-	  <section id="function" class="row-item">
-	    <span id="showhide_organism-list-2" class="collapsed showhide organism-title"><span id="item-title">transcription initiation</span></span>
+<!--
+	<div id="organism-group-4">
+	  <section id="organism" class="row-item">
+	    <span id="showhide_organism-list-4" class="collapsed showhide organism-title"><span id="item-title">transcription initiation</span></span>
 	  </section>
-	  <div id="organism-list-2">
+	  <div id="organism-list-4">
 	    <section id="organism" class="row-item">
-	      <div id="organism-list-2">
+	      <div id="organism-list-4">
 		<span id="cell-item">H.volcanii</span>
 		<span id="cell-item">H.salinarum</span>		
 		<span id="cell-item">H.marismortui</span>		
@@ -196,13 +312,33 @@
 	    </section>
 	  </div>
 	</div>
-      </div><!-- END FUNCTION TAB -->
+-->
+      </div><!-- END REGULATORS TAB -->
 
       <!-- MOTIF TAB -->
       <div id="motif-results">
-	<section id="motif" class="title">
-	  <h4>Motif</h4>
+	<section id="organism" class="title">
+	  <h4>Organism</h4>
 	</section>
+	<section id="function" class="title">
+	  <h4>Motif Name</h4>
+	</section>
+	<section id="function" class="title">
+	  <h4>Image</h4>
+	</section>
+	<section id="function" class="title">
+	  <h4>E-value</h4>
+	</section>
+	<section id="function" class="title">
+	  <h4>Consensus</h4>
+	</section>
+	<section id="function" class="title">
+	  <h4>Motif Match</h4>
+	</section>
+	<section id="function" class="title">
+	  <h4>Similar Motifs</h4>
+	</section>
+<!--
 	<section id="organism" class="title">
 	  <h4 id="subhead">Match</h4>
 	  <div id="name">
@@ -212,27 +348,40 @@
 	    <h4 id="subhead">count</h4>
 	  </div>
 	</section>
+
 	<section id="motif-view" class="title">
 	  <h4>Analyze results with motif view</h4>
 	</section>
 	<section id="add-to-cart" class="title">
 	  <h4>Add to analysis cart</h4>
 	</section>
+-->
 	<div id="motif-group-1">
-	  <section id="motif" class="row-item">
-	    <span id="showhide_motif-list-1" class="collapsed showhide motif-title"><span id="item-title">transcription</span></span>
+	  <section id="organism" class="row-item">
+	    <span id="showhide_motif-list-1" class="collapsed showhide motif-title"><span id="item-title">Disulfovibrio</span></span>
 	  </section>
 	  <div id="motif-list-1">
 	    <section id="organism-match" class="row-item">
 	      <div id="organism-list">
-		<span id="cell-item">H.salinarum</span>
-		<span id="cell-item">H.volcanii</span>
+		<span id="cell-item">motif 0022.1</span>
 	      </div>
-	      <div id="count-list">
-		<span id="cell-item">7</span>
-		<span id="cell-item">13</span>
-	      </div>	      
 	    </section>
+	    <section id="function" class="row-item">
+	      <span id="cell-item">AtcCgt(image)</span>
+	    </section>	    
+	    <section id="function" class="row-item">
+	      <span id="cell-item">0.00014</span>
+	    </section>	    
+	    <section id="function" class="row-item">
+	      <span id="cell-item">GCA....</span>
+	    </section>	    
+	    <section id="function" class="row-item">
+	      <span id="cell-item">RpoN</span>
+	    </section>	    
+	    <section id="function" class="row-item">
+	      <span id="cell-item">NA</span>
+	    </section>	    
+<!--
 	    <section id="motif-view" class="row-item">
 	      <span id="icon"><%= link_to image_tag("portal_icons/analyze_motif.png", :mouseover => "portal_icons/analyze_motif_hover.png"), {:controller => :analysis, :action => :motif} %></span>
 	      <span id="icon"><%= link_to image_tag("portal_icons/analyze_motif.png", :mouseover => "portal_icons/analyze_motif_hover.png"), {:controller => :analysis, :action => :motif} %></span>
@@ -241,6 +390,7 @@
 	      <span id="icon"><%= link_to image_tag("portal_icons/cart.png", :mouseover => "portal_icons/cart_hover.png"), {:action => :search} %></span>
 	      <span id="icon"><%= link_to image_tag("portal_icons/cart.png", :mouseover => "portal_icons/cart_hover.png"), {:action => :search} %></span>
 	    </section>
+-->
 	  </div>
 	</div>
 	<br />
@@ -275,7 +425,7 @@
 	</div>
       </div><!-- END MOTIF TAB -->
     </div><!-- END PORTAL-TABS -->
-
+	<p><a href="/network">view network</a></p>
     <p>Maybe these categories should be: genes, motifs, regulators, and conditions,
       while networks could encompass all, which would more closely reflect the
       structure of the biclusters.</p>
