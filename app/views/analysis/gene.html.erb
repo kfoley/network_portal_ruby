@@ -68,6 +68,9 @@
 
             var all_genes = [];
             var all_bicl = [];
+            var all_regs = [];
+            var all_mots = [];
+            var all_ands = [];
             for (var p in target) {
                 // RENDER DIFFERENT INFO AND FORMAT FOR SINGLE ITEM VIEW
                 if (len == 1) {
@@ -221,8 +224,16 @@
                     //print("NAME = " + target[p].data.canonicalName + "; TYPE = " + target[p].data.type);
 	            var bi_data = {};                    
 	            var gene_data = {};
-	            var gene_array = [];
+	            var reg_data = {};
+	            var mot_data = {};
+	            var and_data = {};
+
 	            var bi_array = [];
+	            var gene_array = [];
+	            var reg_array = [];
+	            var mot_array = [];
+	            var and_array = [];
+	  
 
 	            // bicluster   
                     if(target[p].data.type== "bicluster") { 
@@ -232,7 +243,6 @@
 	                bi_array = bi_data;
 	                all_bicl.push(bi_array);
 	                items["Biclusters"] = all_bicl; //bi_array.push(bi_data);
-
 	            }
 
 	            // gene
@@ -244,37 +254,45 @@
 	                gene_data["TIGR"] = target[p].data.TIGRRoles;
 	                gene_array = gene_data;
 	                all_genes.push(gene_array);
-	                items["Genes"] = all_genes; //gene_array.push(gene_data);
-
-	                //gene_title = "<tr>Genes</tr>";
+	                items["Genes"] = all_genes; 
 	            }
 
                     // regulator
                     if(target[p].data.type =="regulator" ) {
-	                regulator_title = "<tr>Regulators</tr>";
+	                reg_data["Name"] = target[p].data.label;
+	                reg_data["Short Name"] = target[p].data["short.name"];	   
+	                reg_data["Long Name"] = target[p].data["long.name"];
+	                reg_data["COG"] = target[p].data.COG;
+	                reg_data["TIGR"] = target[p].data.TIGRRoles;
+	                reg_array = reg_data;
+	                all_regs.push(reg_array);
+	                items["Regulators"] = all_regs; 
 	            }
 
 	            // motif   
                     if(target[p].data.type== "motif") { 
-	                motif_title = "<tr>Motifs</tr>";
+	                mot_data["Name"] = target[p].data.canonicalName;
+	                mot_data["E Value"] = target[p].data["e.value"];	   
+	                mot_data["Consensus"] = target[p].data.consensus;
+	                mot_array = mot_data;
+	                all_mots.push(mot_array);
+	                items["Motifs"] = all_mots; 
 	            }
 
 	            // edge   
                     if(event.group == "edges") { 
-	                edge_title = "<tr>Edges</tr>";	  
+	                // not sure if this will be added/needed; placeholder
 	            }
 
 	            //AND-GATE
                     if(target[p].data["Matching.Attribute"]) {
-	                and_gate_title = "<tr>AND-Gate</tr>";
+	                and_data["Name"] = target[p].data.canonicalName;
+	                and_data["E Value"] = target[p].data["e.value"];	   
+	                and_data["Consensus"] = target[p].data.consensus;
+	                and_array = and_data;
+	                all_ands.push(and_array);
+	                items["AND-GATE"] = all_ands; 
 	            }
-
-	    //console.debug("items struct = " + items.toSource());
-	    //console.debug("biclu struct = " + bi_data.toSource());
-	    //console.debug("genes struct = " + gene_data.toSource());
-	    //console.debug("biclu array struct = " + bi_array.toSource());
-	    //console.debug("genes array struct = " + gene_array.toSource());
-	    //console.debug("all genes array struct = " + all_genes.toSource());
 
                 }
 
