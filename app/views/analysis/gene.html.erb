@@ -744,69 +744,107 @@
 
 <div id="page">
   <div id="content">
-    <h1>Bicluster (was gene) Analysis View</h1>
-
+    <h1>Network Analysis View</h1>
+    <p>Flagellar Assembly</p>
     <div id="gene-tabs">
       <ul class="tabs">
-	<li><a href="#gene-1">Gene: tfbA (VNG2184)</a></li>
-	<li><a href="#gene-2">Gene: tfbD (VNG0869)</a></li>
+	<li><a href="#gene-1">D. Vulgaris</a></li>
+	<li><a href="#gene-2">H. Salinarum</a></li>
       </ul>
       
       <!-- BEGING TABS -->
       <div id="gene-1" class="pane">
+<!--
 	<div class="expand_top">
 	  <div class="expand_all">Expand All</div>
 	</div>
-	<div id="function">
-	  <span id="function-list" class="collapsed function-title expand_heading"><span id="item-title">Function:</span></span>
-	  <div id="function-list" class="toggle_container">
-	    stuff
-	  </div>
-	</div><!-- #function -->
-	<br/>
-	<div id="homology">
-	  <span id="homology-list" class="collapsed homology-title expand_heading"><span id="item-title">Homology:</span></span>
-	  <div id="homology-list" class="toggle_container">
-	    <div id="homology-tabs">
-	      <ul id="test" class="tabs">
-		<li><a href="#tab-1">tfb1 (H.marismortui)</a></li>
-		<li><a href="#tab-2">tfb7 (H.volcanii)</a></li>
-	      </ul>
-	      <div id="tab-1" class="pane">
-		stuff 1
-	      </div>
-	      <div id="tab-2" class="pane">
-		stuff 2
-	      </div>
+-->
+	<div id="summary">
+	  <section class="summary">
+	    <span class="title">Summary:</span>
+	    <span class="descr-info">Some definition/summary info here.  We can grab from KEGG</span>
+	  </section>
+	  <br />
+	  <section class="related-networks">
+	    <span class="title">Related Networks:</span>
+	    <table id="related"> 
+	      <caption></caption>
+	      <colgroup id="cols" span="4"></colgroup>
+	      <tr>
+		<th>Name</th>
+		<th># of Biclusters</th>
+		<th># of Regulators</th>
+		<th>p-value</th>
+	      </tr>
+	      <tr>
+		<td>Bacterial Chemotaxis</td>
+		<td>3</td>
+		<td>6</td>
+		<td>0.221</td>
+	      </tr>
+	    </table>
+	  </section>
+	  <br />
+	  <section class="stat-table">
+	    <span class="title">Enrichment table of stats:</span>
+	    <div id="network-summary">
+	      <table id="enrich">
+		<caption>Functional enrichment of Flagellar Assembly pathway in D. vulgaris regulatory network</caption>
+		<colgroup id="cols" span="5"></colgroup>	      
+		<tr>
+		  <th>Bicluster</th>
+		  <th>p-value</th>
+		  <th>pathway 2</th>
+		  <th>pathway 1</th>
+		  <th>pathway 0</th>
+		</tr>
+		<tr>
+		  <td>bicluster_0286</td>
+		  <td>6.498911e-15</td>
+		  <td>Flagellar assembly</td>
+		  <td>Cell Motility</td>
+		  <td>Cellular Processes</td>
+		</tr> 
+		<tr>
+		  <td>bicluster_0184</td>
+		  <td>1.353184e-27</td>
+		  <td>Flagellar assembly</td>
+		  <td>Cell Motility</td>
+		  <td>Cellular Processes</td>
+		</tr> 
+		<tr>
+		  <td>bicluster_0125</td>
+		  <td>1.078040e-20</td>
+		  <td>Flagellar assembly</td>
+		  <td>Cell Motility</td>
+		  <td>Cellular Processes</td>
+		</tr>
+		<tr>
+		  <td>bicluster_0022</td>
+		  <td>6.186446e-13</td>
+		  <td>Flagellar assembly</td>
+		  <td>Cell Motility</td>
+		  <td>Cellular Processes</td>
+		</tr> 
+	      </table>
 	    </div>
-	  </div>
-	</div><!-- #homology -->
-	<br/>
-	<div id="interaction">
-	  <span id="interaction-list" class="collapsed interaction-title expand_heading"><span id="item-title">Interaction:</span></span>
-	  <div id="interaction-list" class="toggle_container">
-	    <div id="interaction-tabs">
-	      <ul id="test" class="tabs">
-		<li><a href="#tab-3">tbpC protein-protein</a></li>
-		<li><a href="#tab-4">tfbC genetic</a></li>
-	      </ul>
-	      <div id="tab-3" class="pane">
-		stuff 3
-	      </div>
-	      <div id="tab-4" class="pane">
-		stuff 4
-	      </div>
-	    </div>
-	  </div>
-	</div><!-- #interaction -->
+	  </section>
+	</div>
 	<br/>
 	<div id="network">
+<!--
 	  <span id="network-list" class="collapsed network-title expand_heading"><span id="item-title">Network:</span></span>
 	  <div id="network-list" class="toggle_container">
+-->
+	  <span id="network-list" class="network-title expand_heading"><span id="item-title">Network:</span></span>
+	  <div id="network-list">
 	    <div id="network-tabs">
 	      <ul id="test" class="tabs">
 		<li><a href="#tab-5">Overview Network</a></li>
-		<li><a href="#tab-6">Bicluster 0223</a></li>
+		<li><a href="#tab-6">Bicluster 0286</a></li>
+		<li><a href="#tab-7">Bicluster 0184</a></li>
+		<li><a href="#tab-8">Bicluster 0125</a></li>
+		<li><a href="#tab-9">Bicluster 0022</a></li>
 	      </ul>
 	      <div id="tab-5" class="pane">
 		<div id="network-summary">
@@ -907,6 +945,15 @@
 		</div>
 
 <!--stuff for tab 6-->
+	      </div>
+	      <div id="tab-7" class="pane">
+		stuff for bicluster 0184
+	      </div>
+	      <div id="tab-8" class="pane">
+		stuff for bicluster 0125
+	      </div>
+	      <div id="tab-9" class="pane">
+		stuff for bicluster 0022
 	      </div>
 	    </div>
 	  </div>

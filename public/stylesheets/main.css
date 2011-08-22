@@ -151,6 +151,11 @@ a  {
     padding-right: 30px;
 }
 
+#bicluster.bi-special {
+    padding-left: 0px;
+    width: 300px;
+}
+
 #bicluster {
     display: table-cell;
     width: 110px;
@@ -365,4 +370,14 @@ to make the following work how we'd like */
 #cytoscapeweb2 {
     width: 755px;
     height: 550px;
+}
+
+/* enrichment table */
+#enrich {
+    width: 700px;
+}
+
+/*related networks table */
+#related {
+    width: 600px;
 }
