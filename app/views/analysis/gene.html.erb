@@ -18,13 +18,19 @@
     // callback when Cytoscape Web has finished drawing
     vis.ready(function() {
 
+        $select_toggle = 1;
         $test = vis.addListener("select", "nodes", function(event) {
+            if($select_toggle == 0) {
+                return;
+            } 
+
             $dialog = $("#note").wijdialog({
                 autoOpen: true,
                 title: 'Selection: Nodes',
                 width: 600,
                 open: handle_select(event)
             });
+            
         });
 
         vis.addListener("click", "edges", function(event) {
@@ -48,8 +54,28 @@
                 return false;
             });
         });
+    
+
+        // START OF RIGHT CONTEXT MENU CODE - SELECT FIRST NEIGHBORS
+        vis.addContextMenuItem("Select first neighbors", "nodes", 
+            function (evt) {
+                $select_toggle = 0;
+                // Get the right-clicked node:
+                var rootNode = evt.target;
+        
+                // Get the first neighbors of that node:
+                var fNeighbors = vis.firstNeighbors([rootNode]);
+                var neighborNodes = fNeighbors.neighbors;
+        
+                // Select the root node and its neighbors:
+                vis.select([rootNode]).select(neighborNodes);
+
+                $select_toggle = 1;
+            }
+        );
 
         function handle_select(event) {
+
             var target = event.target;
             var table_start;
             var table_end;
@@ -676,7 +702,8 @@
 
 
     $.ajax({
-        url: "/images/dvh_portal_files/flagella_inf_motif_union.xgmml",
+        //url: "/images/dvh_portal_files/flagella_inf_motif_union.xgmml",
+        url: "/images/dvh_portal_files/flagella_union.xgmml",
         success: function(data){
             if (typeof data !== "string") {
                 if (window.ActiveXObject) { // IE
