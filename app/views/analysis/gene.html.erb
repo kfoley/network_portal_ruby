@@ -18,37 +18,34 @@
     // callback when Cytoscape Web has finished drawing
     vis.ready(function() {
 
-/*
-        // add a listener for when nodes and edges are clicked
-        vis.addListener("click", "nodes", function(event) {
-           console.debug("=====================");
-           console.debug("here i am click 1; remove select = " + event.type); 
-           console.debug("here i am click 1 select listener = " + vis.hasListener("select","nodes")); 
-           $("#note").dialog({
+        $test = vis.addListener("select", "nodes", function(event) {
+            $dialog = $("#note").wijdialog({
                 autoOpen: true,
                 title: 'Selection: Nodes',
                 width: 600,
-                position: ['right','center'],
-                open: handle_click(event)
-            });
-        });
-*/
-        vis.addListener("select", "nodes", function(event) {
-           //console.debug("test event = " + event.toSource() ); 
-           $("#note").dialog({
-                autoOpen: true,
-                title: 'Selection: Nodes',
-                width: 600,
-                position: ['right','center'],
                 open: handle_select(event)
             });
         });
 
         vis.addListener("click", "edges", function(event) {
-            $("#note").dialog({
-                autoOpen: true,
+            $("#note").wijdialog({
+                autoOpen: false,
                 title: 'Selection: Edges',
                 open: handle_click(event)
+            });
+        });
+
+        jQuery(function($) {
+            $($test).each(function() {
+                $.data(this, 'dialog', 
+                    $(this).next("#note").dialog({
+                        autoOpen: false,
+                        width: 600
+                    })
+                );
+            }).click(function() {
+                $.data(this, 'dialog').dialog('open');
+                return false;
             });
         });
 
@@ -60,11 +57,6 @@
             clear();
 
             len = target.length;
-
-            //if (len > 1) {
-                //table_start  = "<table><caption id=\"network-caption\">Summary view of network </caption><colgroup id=\"cols\" span=\"9\"></colgroup>";
-            //}
-
 
             var all_genes = [];
             var all_bicl = [];
@@ -308,7 +300,6 @@
 	        for(var a in items) {
 	            //console.debug("type = " + a);
 	            a_chunk = "<tr><th>" + a + "</th></tr>";
-                    console.debug("type = " + a_chunk);
 	            table_text += a_chunk;
 	            rows = "";
 	            for (var s in items[a]) {
@@ -324,18 +315,15 @@
 	                    }
 	                        r_chunk = "<td>" + v + "</td>";	         
                                 rows +=  r_chunk;
-	                    //console.debug("items = " + k + "..." + items[a][s][k]);
 	                }
 	                rows += "</tr>";
 	            }
-	            console.debug(row_start + headers + row_end);
-	            console.debug(rows);	     
 	            table_text += row_start + headers + row_end;
 	            table_text += rows;
 	        }
 	        table_text += "</table>";
-	        console.debug(table_text);
 	        print(table_text);
+
 	    }
 
         } // handle_select
@@ -506,12 +494,15 @@
     
         // add a listener for when nodes and edges are clicked
         vis_2.addListener("click", "nodes", function(event) {
-            $("#note2").dialog({
+            $dialog = $("#note2").wijdialog({
                 autoOpen: true,
                 title: 'Selection: Nodes',
                 width: 600,
+                //stack: true,
+                //position: ['right','center'],
                 open: handle_click(event)
             });
+
         });
 
         vis_2.addListener("click", "edges", function(event) {
@@ -847,6 +838,7 @@
 		<li><a href="#tab-9">Bicluster 0022</a></li>
 	      </ul>
 	      <div id="tab-5" class="pane">
+<!--
 		<div id="network-summary">
 		  <table> 
 		    <caption id="network-caption">Functional enrichment of Flagellar Assembly pathway in D. vulgaris regulatory network </caption>
@@ -888,11 +880,21 @@
 		    </tr> 
 		  </table> 
 		</div> 
+-->
 		<div id="cytoscapeweb">
 
 		</div>
 		<div id="note">
-
+		</div>
+		<div id="note">
+		</div>
+		<div id="note">
+		</div>
+		<div id="note">
+		</div>
+		<div id="note">
+		</div>
+		<div id="note">
 		</div>
 	      </div>
 	      <div id="tab-6" class="pane">
@@ -941,7 +943,16 @@
 
 		</div>
 		<div id="note2">
-
+		</div>
+		<div id="note2">
+		</div>
+		<div id="note2">
+		</div>
+		<div id="note2">
+		</div>
+		<div id="note2">
+		</div>
+		<div id="note2">
 		</div>
 
 <!--stuff for tab 6-->
