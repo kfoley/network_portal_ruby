@@ -7,7 +7,7 @@
         <dc:type>Protein-Protein Interaction</dc:type>
         <dc:description>N/A</dc:description>
         <dc:identifier>N/A</dc:identifier>
-        <dc:date>2011-08-24 13:56:44</dc:date>
+        <dc:date>2011-08-24 16:46:13</dc:date>
         <dc:title>flagella.union</dc:title>
         <dc:source>http://www.cytoscape.org/</dc:source>
         <dc:format>Cytoscape-XGMML</dc:format>
@@ -25,6 +25,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00448"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0804"/>
+    <att type="string" name="logic.combines.2" value="DVU1561"/>
+    <att type="string" name="logic.gate" value="AND-00448"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0077"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00448"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -35,6 +40,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01401"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3313"/>
+    <att type="string" name="logic.combines.2" value="DVU2675"/>
+    <att type="string" name="logic.gate" value="AND-01401"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0245"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01401"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -99,6 +109,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00037"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2644"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-00037"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0007"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00037"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -109,6 +124,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00986"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3313"/>
+    <att type="string" name="logic.combines.2" value="DVU2588"/>
+    <att type="string" name="logic.gate" value="AND-00986"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0174"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00986"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -119,6 +139,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00039"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2836"/>
+    <att type="string" name="logic.combines.2" value="DVU3313"/>
+    <att type="string" name="logic.gate" value="AND-00039"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0008"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00039"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -129,6 +154,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00041"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU1331"/>
+    <att type="string" name="logic.gate" value="AND-00041"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0008"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00041"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -139,6 +169,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00042"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU1645"/>
+    <att type="string" name="logic.gate" value="AND-00042"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0008"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00042"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -149,6 +184,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00043"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU1760"/>
+    <att type="string" name="logic.gate" value="AND-00043"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0008"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00043"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -185,6 +225,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00462"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0804"/>
+    <att type="string" name="logic.combines.2" value="DVU3142"/>
+    <att type="string" name="logic.gate" value="AND-00462"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0079"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00462"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -195,6 +240,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00461"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3255"/>
+    <att type="string" name="logic.combines.2" value="DVU2799"/>
+    <att type="string" name="logic.gate" value="AND-00461"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0078"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00461"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -205,6 +255,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00022"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2423"/>
+    <att type="string" name="logic.combines.2" value="DVU3313"/>
+    <att type="string" name="logic.gate" value="AND-00022"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0005"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00022"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -215,6 +270,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01967"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU2036"/>
+    <att type="string" name="logic.gate" value="AND-01967"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0343"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01967"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -251,6 +311,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00963"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU1572"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-00963"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0171"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00963"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -287,6 +352,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01915"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU1744"/>
+    <att type="string" name="logic.gate" value="AND-01915"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0334"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01915"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -351,6 +421,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00020"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU1572"/>
+    <att type="string" name="logic.combines.2" value="DVU3313"/>
+    <att type="string" name="logic.gate" value="AND-00020"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0005"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00020"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -361,6 +436,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00957"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3313"/>
+    <att type="string" name="logic.combines.2" value="DVU1645"/>
+    <att type="string" name="logic.gate" value="AND-00957"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0170"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00957"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -397,6 +477,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00958"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3313"/>
+    <att type="string" name="logic.combines.2" value="DVU2106"/>
+    <att type="string" name="logic.gate" value="AND-00958"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0170"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00958"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -489,6 +574,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00473"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3313"/>
+    <att type="string" name="logic.combines.2" value="DVU1156"/>
+    <att type="string" name="logic.gate" value="AND-00473"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0081"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00473"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -499,6 +589,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00475"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3313"/>
+    <att type="string" name="logic.combines.2" value="DVU1063"/>
+    <att type="string" name="logic.gate" value="AND-00475"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0081"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00475"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -539,6 +634,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-01931"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-01931"/>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVUA0100"/>
+    <att type="string" name="logic.gate" value="AND-01931"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0337"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-01931"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01931"/>
@@ -576,6 +676,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00497"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3193"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-00497"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0086"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00497"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -586,6 +691,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00002"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0804"/>
+    <att type="string" name="logic.combines.2" value="DVU3142"/>
+    <att type="string" name="logic.gate" value="AND-00002"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0001"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00002"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -648,6 +758,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00968"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU1584"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-00968"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0171"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00968"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -711,6 +826,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00113"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0653"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-00113"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0019"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00113"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -747,6 +867,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00927"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU1584"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-00927"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0163"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00927"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -757,6 +882,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00385"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3193"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-00385"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0068"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00385"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -825,6 +955,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00386"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0653"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-00386"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0068"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00386"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -835,6 +970,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01468"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU0946"/>
+    <att type="string" name="logic.gate" value="AND-01468"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0255"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01468"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -845,6 +985,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00375"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU1628"/>
+    <att type="string" name="logic.combines.2" value="DVU2799"/>
+    <att type="string" name="logic.gate" value="AND-00375"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0065"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00375"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -855,6 +1000,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01474"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU2036"/>
+    <att type="string" name="logic.gate" value="AND-01474"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0256"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01474"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -917,6 +1067,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00392"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU0946"/>
+    <att type="string" name="logic.gate" value="AND-00392"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0068"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00392"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -927,6 +1082,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00087"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3167"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-00087"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0016"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00087"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -937,6 +1097,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00419"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0804"/>
+    <att type="string" name="logic.combines.2" value="DVUA0151"/>
+    <att type="string" name="logic.gate" value="AND-00419"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0073"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00419"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -947,6 +1112,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00082"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0804"/>
+    <att type="string" name="logic.combines.2" value="DVU3142"/>
+    <att type="string" name="logic.gate" value="AND-00082"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0015"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00082"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -957,6 +1127,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01978"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0110"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-01978"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0345"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01978"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -967,6 +1142,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00900"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2644"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-00900"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0159"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00900"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -1134,6 +1314,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01516"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0230"/>
+    <att type="string" name="logic.combines.2" value="DVU3313"/>
+    <att type="string" name="logic.gate" value="AND-01516"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0262"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01516"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -1144,6 +1329,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00061"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU1561"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-00061"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0011"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00061"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -1154,6 +1344,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00906"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0804"/>
+    <att type="string" name="logic.combines.2" value="DVU1517"/>
+    <att type="string" name="logic.gate" value="AND-00906"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0160"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00906"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -1168,6 +1363,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-00423"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-00423"/>
+    <att type="string" name="logic.combines.1" value="DVU2799"/>
+    <att type="string" name="logic.combines.2" value="DVU2802"/>
+    <att type="string" name="logic.gate" value="AND-00423"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0074"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-00423"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00423"/>
@@ -1261,6 +1461,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01110"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0804"/>
+    <att type="string" name="logic.combines.2" value="DVU1754"/>
+    <att type="string" name="logic.gate" value="AND-01110"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0197"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01110"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -1389,6 +1594,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01552"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0804"/>
+    <att type="string" name="logic.combines.2" value="DVU1788"/>
+    <att type="string" name="logic.gate" value="AND-01552"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0270"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01552"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -1462,6 +1672,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01134"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2644"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-01134"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0200"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01134"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -1557,6 +1772,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01565"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU3305"/>
+    <att type="string" name="logic.gate" value="AND-01565"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0273"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01565"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -1567,6 +1787,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01079"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2644"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-01079"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0190"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01079"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -1577,6 +1802,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01092"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU0946"/>
+    <att type="string" name="logic.gate" value="AND-01092"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0193"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01092"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -1651,6 +1881,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01564"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2799"/>
+    <att type="string" name="logic.combines.2" value="DVU1744"/>
+    <att type="string" name="logic.gate" value="AND-01564"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0273"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01564"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -1661,6 +1896,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01563"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVUA0100"/>
+    <att type="string" name="logic.gate" value="AND-01563"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0273"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01563"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -1671,6 +1911,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01087"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2547"/>
+    <att type="string" name="logic.combines.2" value="DVU2799"/>
+    <att type="string" name="logic.gate" value="AND-01087"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0192"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01087"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -1681,6 +1926,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00612"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3313"/>
+    <att type="string" name="logic.combines.2" value="DVU2827"/>
+    <att type="string" name="logic.gate" value="AND-00612"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0107"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00612"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -1691,6 +1941,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00611"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3313"/>
+    <att type="string" name="logic.combines.2" value="DVU1402"/>
+    <att type="string" name="logic.gate" value="AND-00611"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0107"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00611"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -1786,6 +2041,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01096"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0653"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-01096"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0193"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01096"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -2102,6 +2362,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00508"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0804"/>
+    <att type="string" name="logic.combines.2" value="DVU2557"/>
+    <att type="string" name="logic.gate" value="AND-00508"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0089"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00508"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -2138,6 +2403,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00506"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU0946"/>
+    <att type="string" name="logic.gate" value="AND-00506"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0088"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00506"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -2152,6 +2422,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-01050"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-01050"/>
+    <att type="string" name="logic.combines.1" value="DVU1584"/>
+    <att type="string" name="logic.combines.2" value="DVU0269"/>
+    <att type="string" name="logic.gate" value="AND-01050"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0184"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-01050"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-01050"/>
@@ -2163,6 +2438,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00504"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU1572"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-00504"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0088"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00504"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -2177,6 +2457,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-01049"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-01049"/>
+    <att type="string" name="logic.combines.1" value="DVU2547"/>
+    <att type="string" name="logic.combines.2" value="DVU2989"/>
+    <att type="string" name="logic.gate" value="AND-01049"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0184"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-01049"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-01049"/>
@@ -2192,6 +2477,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-01052"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-01052"/>
+    <att type="string" name="logic.combines.1" value="DVU3255"/>
+    <att type="string" name="logic.combines.2" value="DVU3186"/>
+    <att type="string" name="logic.gate" value="AND-01052"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0184"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-01052"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-01052"/>
@@ -2207,6 +2497,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-01051"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-01051"/>
+    <att type="string" name="logic.combines.1" value="DVU0309"/>
+    <att type="string" name="logic.combines.2" value="DVU3220"/>
+    <att type="string" name="logic.gate" value="AND-01051"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0184"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-01051"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-01051"/>
@@ -2308,6 +2603,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-01054"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-01054"/>
+    <att type="string" name="logic.combines.1" value="DVU2547"/>
+    <att type="string" name="logic.combines.2" value="DVU0309"/>
+    <att type="string" name="logic.gate" value="AND-01054"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0184"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-01054"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-01054"/>
@@ -2323,6 +2623,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-01053"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-01053"/>
+    <att type="string" name="logic.combines.1" value="DVU0110"/>
+    <att type="string" name="logic.combines.2" value="DVU2802"/>
+    <att type="string" name="logic.gate" value="AND-01053"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0184"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-01053"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-01053"/>
@@ -2334,6 +2639,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01056"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU1063"/>
+    <att type="string" name="logic.gate" value="AND-01056"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0185"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01056"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -2344,6 +2654,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01613"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU2036"/>
+    <att type="string" name="logic.gate" value="AND-01613"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0282"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01613"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -2354,6 +2669,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01614"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU2582"/>
+    <att type="string" name="logic.gate" value="AND-01614"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0282"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01614"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -2390,6 +2710,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01618"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3313"/>
+    <att type="string" name="logic.combines.2" value="DVU2106"/>
+    <att type="string" name="logic.gate" value="AND-01618"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0283"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01618"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -2400,6 +2725,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01076"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU1645"/>
+    <att type="string" name="logic.gate" value="AND-01076"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0190"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01076"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -2414,6 +2744,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-01630"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-01630"/>
+    <att type="string" name="logic.combines.1" value="DVU2547"/>
+    <att type="string" name="logic.combines.2" value="DVU0309"/>
+    <att type="string" name="logic.gate" value="AND-01630"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0286"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-01630"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-01630"/>
@@ -2429,6 +2764,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-01629"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-01629"/>
+    <att type="string" name="logic.combines.1" value="DVU2195"/>
+    <att type="string" name="logic.combines.2" value="DVU0309"/>
+    <att type="string" name="logic.gate" value="AND-01629"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0286"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-01629"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-01629"/>
@@ -2444,6 +2784,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-01632"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-01632"/>
+    <att type="string" name="logic.combines.1" value="DVU0309"/>
+    <att type="string" name="logic.combines.2" value="DVU2960"/>
+    <att type="string" name="logic.gate" value="AND-01632"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0286"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-01632"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-01632"/>
@@ -2518,6 +2863,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-01631"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-01631"/>
+    <att type="string" name="logic.combines.1" value="DVU0309"/>
+    <att type="string" name="logic.combines.2" value="DVU0569"/>
+    <att type="string" name="logic.gate" value="AND-01631"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0286"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-01631"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-01631"/>
@@ -2529,6 +2879,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00534"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU1572"/>
+    <att type="string" name="logic.combines.2" value="DVU3313"/>
+    <att type="string" name="logic.gate" value="AND-00534"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0094"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00534"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -2543,6 +2898,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-01634"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-01634"/>
+    <att type="string" name="logic.combines.1" value="DVU0309"/>
+    <att type="string" name="logic.combines.2" value="DVU3023"/>
+    <att type="string" name="logic.gate" value="AND-01634"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0286"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-01634"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-01634"/>
@@ -2558,6 +2918,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-01633"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-01633"/>
+    <att type="string" name="logic.combines.1" value="DVU0309"/>
+    <att type="string" name="logic.combines.2" value="DVU0679"/>
+    <att type="string" name="logic.gate" value="AND-01633"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0286"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-01633"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-01633"/>
@@ -2573,6 +2938,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-01636"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-01636"/>
+    <att type="string" name="logic.combines.1" value="DVU0110"/>
+    <att type="string" name="logic.combines.2" value="DVU0309"/>
+    <att type="string" name="logic.gate" value="AND-01636"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0286"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-01636"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-01636"/>
@@ -2641,6 +3011,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-01635"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-01635"/>
+    <att type="string" name="logic.combines.1" value="DVU1964"/>
+    <att type="string" name="logic.combines.2" value="DVU0309"/>
+    <att type="string" name="logic.gate" value="AND-01635"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0286"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-01635"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-01635"/>
@@ -2652,6 +3027,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01624"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU0749"/>
+    <att type="string" name="logic.gate" value="AND-01624"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0285"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01624"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -2688,6 +3068,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01628"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU0946"/>
+    <att type="string" name="logic.gate" value="AND-01628"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0285"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01628"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -2698,6 +3083,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00550"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3313"/>
+    <att type="string" name="logic.combines.2" value="DVU2802"/>
+    <att type="string" name="logic.gate" value="AND-00550"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0096"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00550"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -2739,6 +3129,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00551"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3193"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-00551"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0097"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00551"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -2753,6 +3148,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-01637"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-01637"/>
+    <att type="string" name="logic.combines.1" value="DVU2567"/>
+    <att type="string" name="logic.combines.2" value="DVU0309"/>
+    <att type="string" name="logic.gate" value="AND-01637"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0286"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-01637"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-01637"/>
@@ -2764,6 +3164,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00561"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU1584"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-00561"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0098"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00561"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -2800,6 +3205,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00564"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU2036"/>
+    <att type="string" name="logic.gate" value="AND-00564"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0098"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00564"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -2840,6 +3250,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-00718"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-00718"/>
+    <att type="string" name="logic.combines.1" value="DVU3255"/>
+    <att type="string" name="logic.combines.2" value="DVU1584"/>
+    <att type="string" name="logic.gate" value="AND-00718"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0125"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-00718"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-00718"/>
@@ -2855,6 +3270,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-00717"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-00717"/>
+    <att type="string" name="logic.combines.1" value="DVU3255"/>
+    <att type="string" name="logic.combines.2" value="DVU1156"/>
+    <att type="string" name="logic.gate" value="AND-00717"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0125"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-00717"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-00717"/>
@@ -2870,6 +3290,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-00719"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-00719"/>
+    <att type="string" name="logic.combines.1" value="DVU2547"/>
+    <att type="string" name="logic.combines.2" value="DVU0309"/>
+    <att type="string" name="logic.gate" value="AND-00719"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0125"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-00719"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-00719"/>
@@ -2881,6 +3306,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00285"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU1744"/>
+    <att type="string" name="logic.gate" value="AND-00285"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0051"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00285"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -2917,6 +3347,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00710"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0804"/>
+    <att type="string" name="logic.combines.2" value="DVU3142"/>
+    <att type="string" name="logic.gate" value="AND-00710"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0124"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00710"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -2990,11 +3425,16 @@
       <att type="string" name="cytoscape.alias.list" value="AND-00712"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-00712"/>
+    <att type="string" name="logic.combines.1" value="DVU1584"/>
+    <att type="string" name="logic.combines.2" value="DVU0269"/>
+    <att type="string" name="logic.gate" value="AND-00712"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0125"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-00712"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-00712"/>
     <att type="string" name="type" value="AND_Gate"/>
-    <graphics type="VEE" h="20.0" w="20.0" x="432.0" y="1342.0" fill="#ffffff" width="1" outline="#000000" cy:nodeTransparency="1.0" cy:nodeLabelFont="Default-0-12" cy:borderLineType="solid"/>
+    <graphics type="VEE" h="20.0" w="20.0" x="419.2396545410156" y="1364.96826171875" fill="#ffffff" width="1" outline="#000000" cy:nodeTransparency="1.0" cy:nodeLabelFont="Default-0-12" cy:borderLineType="solid"/>
   </node>
   <node label="AND-00714" id="-5803">
     <att type="list" name="Matching.Attribute">
@@ -3005,6 +3445,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-00714"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-00714"/>
+    <att type="string" name="logic.combines.1" value="DVU2423"/>
+    <att type="string" name="logic.combines.2" value="DVU1419"/>
+    <att type="string" name="logic.gate" value="AND-00714"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0125"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-00714"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-00714"/>
@@ -3020,6 +3465,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-00713"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-00713"/>
+    <att type="string" name="logic.combines.1" value="DVU2547"/>
+    <att type="string" name="logic.combines.2" value="DVU2989"/>
+    <att type="string" name="logic.gate" value="AND-00713"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0125"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-00713"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-00713"/>
@@ -3035,6 +3485,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-00716"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-00716"/>
+    <att type="string" name="logic.combines.1" value="DVU3255"/>
+    <att type="string" name="logic.combines.2" value="DVU3186"/>
+    <att type="string" name="logic.gate" value="AND-00716"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0125"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-00716"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-00716"/>
@@ -3050,6 +3505,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-00715"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-00715"/>
+    <att type="string" name="logic.combines.1" value="DVU0309"/>
+    <att type="string" name="logic.combines.2" value="DVU0621"/>
+    <att type="string" name="logic.gate" value="AND-00715"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0125"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-00715"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-00715"/>
@@ -3110,6 +3570,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01660"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU2527"/>
+    <att type="string" name="logic.gate" value="AND-01660"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0290"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01660"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -3124,6 +3589,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-01250"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-01250"/>
+    <att type="string" name="logic.combines.1" value="DVU0230"/>
+    <att type="string" name="logic.combines.2" value="DVU3313"/>
+    <att type="string" name="logic.gate" value="AND-01250"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0220"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-01250"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01250"/>
@@ -3135,6 +3605,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00707"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3193"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-00707"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0124"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00707"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -3145,6 +3620,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01666"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2644"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-01666"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0290"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01666"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -3262,6 +3742,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01232"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0230"/>
+    <att type="string" name="logic.combines.2" value="DVU0804"/>
+    <att type="string" name="logic.gate" value="AND-01232"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0217"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01232"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -3307,6 +3792,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-00744"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-00744"/>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU2577"/>
+    <att type="string" name="logic.gate" value="AND-00744"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0131"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-00744"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00744"/>
@@ -3433,6 +3923,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-00742"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-00742"/>
+    <att type="string" name="logic.combines.1" value="DVUA0143"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-00742"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0131"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-00742"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00742"/>
@@ -3444,6 +3939,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01227"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU1142"/>
+    <att type="string" name="logic.gate" value="AND-01227"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0216"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01227"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -3454,6 +3954,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00746"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2788"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-00746"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0132"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00746"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -3464,6 +3969,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01223"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU1063"/>
+    <att type="string" name="logic.gate" value="AND-01223"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0216"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01223"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -3474,6 +3984,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01692"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0653"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-01692"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0295"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01692"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -3540,6 +4055,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00733"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0804"/>
+    <att type="string" name="logic.combines.2" value="DVUA0151"/>
+    <att type="string" name="logic.gate" value="AND-00733"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0129"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00733"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -3702,6 +4222,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01695"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3313"/>
+    <att type="string" name="logic.combines.2" value="DVU2909"/>
+    <att type="string" name="logic.gate" value="AND-01695"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0296"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01695"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -3950,6 +4475,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01746"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3167"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-01746"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0303"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01746"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -4256,6 +4786,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00372"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2394"/>
+    <att type="string" name="logic.combines.2" value="DVU2799"/>
+    <att type="string" name="logic.gate" value="AND-00372"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0065"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00372"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -4376,6 +4911,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01182"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3255"/>
+    <att type="string" name="logic.combines.2" value="DVU2799"/>
+    <att type="string" name="logic.gate" value="AND-01182"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0208"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01182"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -4996,6 +5536,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01166"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU2036"/>
+    <att type="string" name="logic.gate" value="AND-01166"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0205"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01166"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -5006,6 +5551,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00690"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVUA0100"/>
+    <att type="string" name="logic.gate" value="AND-00690"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0121"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00690"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -5070,6 +5620,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01772"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3066"/>
+    <att type="string" name="logic.combines.2" value="DVU0804"/>
+    <att type="string" name="logic.gate" value="AND-01772"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0307"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01772"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -5080,6 +5635,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00318"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2836"/>
+    <att type="string" name="logic.combines.2" value="DVU3313"/>
+    <att type="string" name="logic.gate" value="AND-00318"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0056"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00318"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -5090,6 +5650,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00320"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU1584"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-00320"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0056"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00320"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -5126,6 +5691,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01776"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU1572"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-01776"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0308"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01776"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -5136,6 +5706,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01774"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3167"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-01774"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0308"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01774"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -5172,6 +5747,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00310"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3167"/>
+    <att type="string" name="logic.combines.2" value="DVU2799"/>
+    <att type="string" name="logic.gate" value="AND-00310"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0055"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00310"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -5208,6 +5788,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00338"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0804"/>
+    <att type="string" name="logic.combines.2" value="DVUA0151"/>
+    <att type="string" name="logic.gate" value="AND-00338"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0059"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00338"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -5244,6 +5829,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01755"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2644"/>
+    <att type="string" name="logic.combines.2" value="DVU2799"/>
+    <att type="string" name="logic.gate" value="AND-01755"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0304"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01755"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -5254,6 +5844,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01753"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3193"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-01753"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0304"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01753"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -5264,6 +5859,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01142"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0804"/>
+    <att type="string" name="logic.combines.2" value="DVU3142"/>
+    <att type="string" name="logic.gate" value="AND-01142"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0202"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01142"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -5364,6 +5964,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01147"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0230"/>
+    <att type="string" name="logic.combines.2" value="DVU0804"/>
+    <att type="string" name="logic.gate" value="AND-01147"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0203"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01147"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -5374,6 +5979,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01385"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU1561"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-01385"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0241"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01385"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -5384,6 +5994,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01386"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU1063"/>
+    <att type="string" name="logic.gate" value="AND-01386"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0241"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01386"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -5394,6 +6009,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00840"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU1561"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-00840"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0148"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00840"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -5430,6 +6050,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00843"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0230"/>
+    <att type="string" name="logic.combines.2" value="DVU0804"/>
+    <att type="string" name="logic.gate" value="AND-00843"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0149"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00843"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -5547,6 +6172,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01379"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0804"/>
+    <att type="string" name="logic.combines.2" value="DVU1561"/>
+    <att type="string" name="logic.gate" value="AND-01379"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0240"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01379"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -5557,6 +6187,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01373"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0804"/>
+    <att type="string" name="logic.combines.2" value="DVU1517"/>
+    <att type="string" name="logic.gate" value="AND-01373"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0240"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01373"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -5571,6 +6206,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-00870"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-00870"/>
+    <att type="string" name="logic.combines.1" value="DVU2547"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-00870"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0153"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-00870"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00870"/>
@@ -5586,6 +6226,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-00121"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-00121"/>
+    <att type="string" name="logic.combines.1" value="DVU1517"/>
+    <att type="string" name="logic.combines.2" value="DVU1584"/>
+    <att type="string" name="logic.gate" value="AND-00121"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0022"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-00121"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-00121"/>
@@ -5597,6 +6242,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00875"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU2036"/>
+    <att type="string" name="logic.gate" value="AND-00875"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0154"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00875"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -5607,6 +6257,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00876"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3167"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-00876"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0154"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00876"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -5621,6 +6276,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-00122"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-00122"/>
+    <att type="string" name="logic.combines.1" value="DVU1561"/>
+    <att type="string" name="logic.combines.2" value="DVU3255"/>
+    <att type="string" name="logic.gate" value="AND-00122"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0022"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-00122"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-00122"/>
@@ -5636,6 +6296,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-00123"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-00123"/>
+    <att type="string" name="logic.combines.1" value="DVU0110"/>
+    <att type="string" name="logic.combines.2" value="DVU2909"/>
+    <att type="string" name="logic.gate" value="AND-00123"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0022"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-00123"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-00123"/>
@@ -5651,6 +6316,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-00124"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-00124"/>
+    <att type="string" name="logic.combines.1" value="DVU2557"/>
+    <att type="string" name="logic.combines.2" value="DVU2675"/>
+    <att type="string" name="logic.gate" value="AND-00124"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0022"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-00124"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-00124"/>
@@ -5721,6 +6391,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-00125"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-00125"/>
+    <att type="string" name="logic.combines.1" value="DVU0569"/>
+    <att type="string" name="logic.combines.2" value="DVU2802"/>
+    <att type="string" name="logic.gate" value="AND-00125"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0022"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-00125"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-00125"/>
@@ -5736,6 +6411,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-01836"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-01836"/>
+    <att type="string" name="logic.combines.1" value="DVU2799"/>
+    <att type="string" name="logic.combines.2" value="DVU2802"/>
+    <att type="string" name="logic.gate" value="AND-01836"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0319"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-01836"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01836"/>
@@ -5751,6 +6431,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-00126"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-00126"/>
+    <att type="string" name="logic.combines.1" value="DVU3193"/>
+    <att type="string" name="logic.combines.2" value="DVU2909"/>
+    <att type="string" name="logic.gate" value="AND-00126"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0022"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-00126"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-00126"/>
@@ -5766,6 +6451,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-00127"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-00127"/>
+    <att type="string" name="logic.combines.1" value="DVU2989"/>
+    <att type="string" name="logic.combines.2" value="DVU2802"/>
+    <att type="string" name="logic.gate" value="AND-00127"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0022"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-00127"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-00127"/>
@@ -5841,6 +6531,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-00128"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-00128"/>
+    <att type="string" name="logic.combines.1" value="DVU3313"/>
+    <att type="string" name="logic.combines.2" value="DVU2675"/>
+    <att type="string" name="logic.gate" value="AND-00128"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0022"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-00128"/>
     <att type="string" name="neighborhood" value="flagella.core"/>
     <att type="string" name="node" value="AND-00128"/>
@@ -5997,6 +6692,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00148"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU0569"/>
+    <att type="string" name="logic.gate" value="AND-00148"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0025"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00148"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -6033,6 +6733,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00777"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU1760"/>
+    <att type="string" name="logic.gate" value="AND-00777"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0137"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00777"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -6099,6 +6804,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01320"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU2527"/>
+    <att type="string" name="logic.gate" value="AND-01320"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0231"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01320"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -6109,6 +6819,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00215"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU0946"/>
+    <att type="string" name="logic.gate" value="AND-00215"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0036"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00215"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -6339,6 +7054,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01322"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2644"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-01322"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0231"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01322"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -6439,6 +7159,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00785"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2567"/>
+    <att type="string" name="logic.combines.2" value="DVU3313"/>
+    <att type="string" name="logic.gate" value="AND-00785"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0139"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00785"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -6782,6 +7507,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01329"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVUA0100"/>
+    <att type="string" name="logic.gate" value="AND-01329"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0233"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01329"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -7177,6 +7907,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01858"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0653"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-01858"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0324"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01858"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -7395,6 +8130,11 @@
       <att type="string" name="cytoscape.alias.list" value="AND-00770"/>
     </att>
     <att type="string" name="infNetwork-01.canonicalName" value="AND-00770"/>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU2527"/>
+    <att type="string" name="logic.gate" value="AND-00770"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0136"/>
     <att type="string" name="merged.inf.csv.1.canonicalName" value="AND-00770"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00770"/>
@@ -7569,6 +8309,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01309"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0110"/>
+    <att type="string" name="logic.combines.2" value="DVU3313"/>
+    <att type="string" name="logic.gate" value="AND-01309"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0229"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01309"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -7724,6 +8469,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00238"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0804"/>
+    <att type="string" name="logic.combines.2" value="DVUA0151"/>
+    <att type="string" name="logic.gate" value="AND-00238"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0042"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00238"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -7790,6 +8540,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00767"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU2036"/>
+    <att type="string" name="logic.gate" value="AND-00767"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0135"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00767"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -7856,6 +8611,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00186"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0804"/>
+    <att type="string" name="logic.combines.2" value="DVU3142"/>
+    <att type="string" name="logic.gate" value="AND-00186"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0032"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00186"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -7866,6 +8626,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00181"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU2036"/>
+    <att type="string" name="logic.gate" value="AND-00181"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0031"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00181"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -7907,6 +8672,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00182"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0653"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-00182"/>
+    <att type="string" name="logic.interaction" value="down-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0031"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00182"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -7917,6 +8687,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00805"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3313"/>
+    <att type="string" name="logic.combines.2" value="DVU2686"/>
+    <att type="string" name="logic.gate" value="AND-00805"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0143"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00805"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -7986,6 +8761,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00193"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2788"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-00193"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0033"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00193"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -8105,6 +8885,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01887"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU0653"/>
+    <att type="string" name="logic.combines.2" value="DVU2114"/>
+    <att type="string" name="logic.gate" value="AND-01887"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0328"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01887"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -8287,6 +9072,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-00803"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU3313"/>
+    <att type="string" name="logic.combines.2" value="DVU3111"/>
+    <att type="string" name="logic.gate" value="AND-00803"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0142"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-00803"/>
     <att type="string" name="type" value="AND_Gate"/>
@@ -8323,6 +9113,11 @@
     <att type="list" name="cytoscape.alias.list">
       <att type="string" name="cytoscape.alias.list" value="AND-01881"/>
     </att>
+    <att type="string" name="logic.combines.1" value="DVU2114"/>
+    <att type="string" name="logic.combines.2" value="DVU2036"/>
+    <att type="string" name="logic.gate" value="AND-01881"/>
+    <att type="string" name="logic.interaction" value="up-regulates"/>
+    <att type="string" name="logic.target" value="bicluster_0327"/>
     <att type="string" name="neighborhood" value="flagella.neighbor"/>
     <att type="string" name="node" value="AND-01881"/>
     <att type="string" name="type" value="AND_Gate"/>
