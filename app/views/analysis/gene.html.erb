@@ -79,7 +79,7 @@
         );
 
         // START OF FILTER CODE FOR **SHOWING** FIRST NEIGHBORS FOR AND-GATE
-        vis.addContextMenuItem("Show first neighbors", "nodes",
+        vis.addContextMenuItem("AND-GATES: Show first neighbors", "nodes",
             function (evt) {
                 var rootNode = evt.target;
                 var logic_1 = rootNode.data["logic.combines.1"]
@@ -89,19 +89,17 @@
                     // return the AND-GATE neighbors
                     if (node.data.label == rootNode.data["logic.combines.1"]) {
                         lookup[node.data.id] = "true";
-                        return node.data;
                     }
                     if (node.data.label == rootNode.data["logic.combines.2"]) {
                         lookup[node.data.id] = "true";
-                        return node.data;
                     }
-	            return node.data.neighborhood == "flagella.core";
+                    return lookup[node.data.id] == "true";
 	        });
             }
         );
 
         // START OF FILTER CODE FOR **HIDING** FIRST NEIGHBORS FOR AND-GATE
-        vis.addContextMenuItem("Hide first neighbors", "nodes",
+        vis.addContextMenuItem("AND-GATES: Hide first neighbors", "nodes",
             function (evt) {
                 var rootNode = evt.target;
                 var logic_1 = rootNode.data["logic.combines.1"];
@@ -121,7 +119,7 @@
             }
         );
 
-/*
+/******************************
         vis.addContextMenuItem("Hide first neighbors", "nodes",
             function (evt) {
                 $select_toggle = 0;
@@ -154,7 +152,7 @@
                 $select_toggle = 1;
             }
         );
-*/
+
         // START OF FILTER CODE FOR SHOWING FIRST NEIGHBORS
         vis.addContextMenuItem("Show hidden", "nodes",
             function (evt) {
@@ -163,6 +161,8 @@
                 $select_toggle = 1;
             }
         );
+
+******************************/
 
 	$('#filter :checkbox').click(function() {
 	    var $this = $(this);
@@ -180,29 +180,28 @@
 	    vis.filter("nodes", function(node) {
 		if (flag == "true") {
 		    // return the whole network
-		    if ($init == 1) {
-		        lookup[node.data.id] = "false";
-		    } else {
-		        lookup[node.data.id] = "true";
-	                return node.data.neighborhood;
-                    }
+		    lookup[node.data.id] = "true";
+		    return lookup[node.data.id] == "true";
 		} else {
                     // only return the core network
 		    if ($init == 1) {
-		        lookup[node.data.id] = "true";
-		    }
-		    if (node.data.neighborhood == "flagella.neighbor") {
+       			if (node.data.neighborhood == "flagella.neighbor") {
+		            lookup[node.data.id] = "false";
+                        } else {
+		            lookup[node.data.id] = "true";
+		        }
+		    } else if (node.data.neighborhood == "flagella.neighbor") {
 		        lookup[node.data.id] = "false";
                     } else {
 		        lookup[node.data.id] = "true";
 		    }
-	            return node.data.neighborhood == "flagella.core";
+                    return lookup[node.data.id] == "true";
 		}
 	    });
             $init = 0;
 	}
 
-/*
+/******************************
         function update_lookup(node_id, state) {
 	    //for (var i = 0; i < lookup.length; i++) {
 	    //console.debug("node_id passed in = " + node_id);
@@ -229,8 +228,8 @@
 	    } else { return; }
 
 	}
-*/
-/*
+
+
         vis.filter("nodes", function(node) {
             var colorMapper = {
                                 attrName: "pathway.2.1",
@@ -247,7 +246,8 @@
             // Set the new style to the Visualization:
             vis.visualStyle(style);            
         });
-*/
+******************************/
+
         // EVENT HANDLER
         function handle_select(event) {
 
@@ -1607,7 +1607,7 @@
 	  <span id="network-list" class="collapsed network-title expand_heading"><span id="item-title">Network:</span></span>
 	  <div id="network-list" class="toggle_container">
 -->
-	  <span id="network-list" class="network-title expand_heading"><span id="item-title">Network:</span></span>
+	  <span id="network-list" class="network-title expand_heading"><span class="title">Network:</span></span>
 	  <div id="network-list">
 	    <div id="network-tabs">
 	      <ul id="test" class="tabs">
