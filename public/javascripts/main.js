@@ -73,9 +73,10 @@ $(document).ready(function() {
 	    }
 	}).bind({
 	    slidechange : function(event, ui) {
-	                  vis.filter("nodes", function(node) { return node.data.resid <= $ ("#residual").val(); }, false );
-			  vis.layout('Preset');
-			  vis.visualStyle();
+	                  //console.debug("resid val = " + ui.value);
+	                  vis.filter("nodes", function(node) { return node.data.resid <= ui.value; }, false );
+			  //vis.layout('Preset');
+			  //vis.visualStyle();
 	    }
 	});
 	$("#residual").val($("#slider-residual").slider("value"));
@@ -93,9 +94,10 @@ $(document).ready(function() {
 	    }
 	}).bind({
 	    slidechange : function(event, ui) {
-	                  vis.filter("edges", function(edge) { return edge.data.weight <= $ ("#weight").val(); }, false );             
-			  vis.layout('Preset');
-			  vis.visualStyle();
+	                  vis.filter("edges", function(edge) { return edge.data.weight <= ui.value; }, false );             
+	                  //vis.filter("edges", function(edge) { return edge.data.weight <= $("#weight").val(); }, false );             
+			  //vis.layout('Preset');
+			  //vis.visualStyle();
 	    }
 	});
 	$("#weight").val($("#slider-weight").slider("value"));
