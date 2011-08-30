@@ -23,6 +23,8 @@
         $select_toggle = 1;
         $init = 1;
         filter_expand_network(flag);
+
+
         $test = vis.addListener("select", "nodes", function(event) {
             if($select_toggle == 0) {
                 return;
@@ -1676,10 +1678,42 @@
 		</div>
 		<div id="note">
 		</div>
+		<br />
 		<form id="filter">
-		  <span>Filters:</span>
+		  <span class="title">Filters:</span>
+		  <div id="filter-section">
 		  <div id="filter-1">
 		    <label><input type="checkbox" name="expand_network">Expand Network</label>
+		  </div>
+		  <div id="filter-2">
+		    <label for="residual">bicluster residual:</label>
+		    <input type="text" id="residual" />
+		    <div id="slider-residual">
+		    </div>
+		    <br /> 
+		    <!--<input type="submit" value="Filter" button id="filter_residual" />-->
+		    <input type="button" value="Reset" button id="reset_residual" />
+		    <!--<button id="filter_residual">Filter</button>
+		    <button id="reset_residual">Reset</button>-->
+		    <hr> 
+		    <label for="weight">edge weight:</label>
+		    <input type="text" id="weight" />
+		    <div id="slider-weight">
+		    </div>
+		    <br /> 
+		    <!--<input type="submit" value="Filter" button id="filter_weight" />-->
+		    <input type="button" value="Reset" button id="reset_weight" /> 
+		    <hr> 
+		    <div id="buttonpanel" class="buttonpanel"> 
+		      <label >Hide </label>
+		      <br /> 
+		      <input type="button" value= "Bicluster" buttonset id="hide_bicluster" />
+		      <input type="button" value= "AND-Gate" buttonset id="hide_andgate" />
+		      <input type="button" value= "Regulator" buttonset id="hide_regulator" />
+		      <input type="button" value= "Genes" buttonset id="hide_genes" />
+		      <input type="button" value= "Reset" buttonset id="reset_all" />
+		    </div>
+		  </div>
 		  </div>
 		</form>
 <!--

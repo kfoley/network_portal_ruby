@@ -63,5 +63,88 @@ $(document).ready(function() {
         $(".toggle_container").slideToggle("slow");
     });
 
+	$("#slider-residual").slider({
+	    value: 0.4,
+	    min: 0.2,
+	    max: 0.6,
+	    step: 0.05,
+	    change: function(event, ui) {
+	            $("#residual").val(ui.value);
+	    }
+	}).bind({
+	    slidechange : function(event, ui) {
+	                  vis.filter("nodes", function(node) { return node.data.resid <= $ ("#residual").val(); }, false );
+			  vis.layout('Preset');
+			  vis.visualStyle();
+	    }
+	});
+	$("#residual").val($("#slider-residual").slider("value"));
+	//$("#residual").change(function() {
+	//    $("#slider-residual").slider("value", $("#residual").val());
+	//});
+
+	$("#slider-weight").slider({
+	    value: 0,
+	    min: -0.3,
+	    max: 0.3,
+	    step: 0.05,
+	    change: function(event, ui) {
+	            $("#weight").val(ui.value);
+	    }
+	}).bind({
+	    slidechange : function(event, ui) {
+	                  vis.filter("edges", function(edge) { return edge.data.weight <= $ ("#weight").val(); }, false );             
+			  vis.layout('Preset');
+			  vis.visualStyle();
+	    }
+	});
+	$("#weight").val($("#slider-weight").slider("value"));
+	//$("#weight").change(function() {
+	//   $("#slider-weight").slider("value", $("#weight").val());
+	//});
+
+	$("#reset_residual").click(function() {
+	    $("#slider-residual").slider( { value: 0.4 } );
+	    vis.filter("nodes", function(node) { return lookup[node.data.id] == "true"; } );
+	    //vis.removeFilter("nodes", false);
+	});
+
+	$("#reset_weight").click(function() {
+	    $("#slider-weight").slider( { value: 0 } );
+	    vis.removeFilter("edges", false);
+	});
+
+	$("#hide_bicluster").click(function() {
+	    vis.filter("nodes", function(node) { return node.data.type != "bicluster"; }, false );
+	    vis.layout('Preset');
+	    vis.visualStyle();
+	});
+
+	$("#hide_andgate").click(function() {
+	    vis.filter("nodes", function(node) { return node.data.type != "AND_Gate"; }, false );
+	    vis.layout('Preset');
+	    vis.visualStyle();
+	});
+
+	$("#hide_regulator").click(function() {
+	    vis.filter("nodes", function(node) { return node.data.type != "regulator"; }, false );
+	    vis.layout('Preset');
+	    vis.visualStyle();
+	});
+
+	$("#hide_genes").click(function() {
+	    vis.filter("nodes", function(node) { return node.data.type != "gene"; }, false );
+	    vis.layout('Preset');
+	    vis.visualStyle();
+	});
+
+	$("#reset_all").click(function() {
+	    vis.filter("nodes", function(node) { return lookup[node.data.id] == "true"; } );
+	    //vis.removeFilter("edges", false);
+	});
+
+	$("input:button, a, button", "#filter-section").button();
+	$("#buttonpanel").buttonset();
+
 	
 });
