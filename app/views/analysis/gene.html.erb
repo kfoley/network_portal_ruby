@@ -270,18 +270,18 @@
                 // RENDER DIFFERENT INFO AND FORMAT FOR SINGLE ITEM VIEW
                 if (len == 1) {
     	            // bicluster   
-                    if(target[p].data.type== "bicluster") { 
+                    if(target[p].data.type == "bicluster") { 
 
 	                svglink=target[p].data["url"];
                         svglink=svglink.replace("htmls" , "svgs").replace("html", "svgz");
 		        print( "<b class=\"ex\">" + "Name : " + "</b>" + target[p].data.canonicalName + " | " +
 		               "<b class=\"ex\">" + "Links : " + "</b>" + "<a target=_blank href=" + target[p].data["url"] + ">" + target[p].data.canonicalName + " page" + "</a>");
                         print("<iframe width=530 height=500 scrolling=no src=" + svglink + ">"  + "</iframe>"  );
-                        print("<iframe width=0 height=0 src=" + target[p].data["url"] + ">"  + "</iframe>"  );
+                        //print("<iframe width=0 height=0 src=" + target[p].data["url"] + ">"  + "</iframe>"  );
 	            }
     
 	            // gene 
-                    if(target[p].data.type =="gene" ) {
+                    if(target[p].data.type == "gene" ) {
                         print("<b class=\"ex\">" + "Node Type : " + "</b>"+ target[p].data.type + "<p>");
                         print("<hr>");
                         print("<ul>");
@@ -320,7 +320,7 @@
                     }   
     
    	            // regulator 
-                    if(target[p].data.type =="regulator" ) {
+                    if(target[p].data.type == "regulator" ) {
                         print("<b class=\"ex\">" + "Node Type : " + "</b>"+ target[p].data.type + "<p>");
                         print("<hr>");
                         print("<ul>");
@@ -362,7 +362,7 @@
                     }
  
 	            // motif   
-                    if(target[p].data.type== "motif") { 
+                    if(target[p].data.type == "motif") { 
                         print("<b class=\"ex\">" + "Type : " + "</b>"+ target[p].data.type + "<p>");
                         print("<ul>");
                         print( "<li>" + "<b class=\"ex\">" + "Name : " + "</b>" + target[p].data.canonicalName + "</li>" + "<p>");
@@ -407,7 +407,7 @@
                     }
             
 	            //AND-GATE
-                    if(target[p].data["Matching.Attribute"]) {
+                    if(target[p].data["logic.gate"]) {
                         print("<b class=\"ex\">" + "Type : " + "</b>"+ "Logic gate" + "<p>");
                         print("<ul>");
                         print("<li>" + "<b class=\"ex\">" + "Name : " + "</b>" + target[p].data.canonicalName + "</li></ul>" + "<p>");
@@ -480,7 +480,7 @@
 	            }
 
 	            //AND-GATE
-                    if(target[p].data["Matching.Attribute"]) {
+                    if(target[p].data["logic.gate"]) {
 	                and_data["Name"] = target[p].data.canonicalName;
 	                and_data["E Value"] = target[p].data["e.value"];	   
 	                and_data["Consensus"] = target[p].data.consensus;
@@ -536,7 +536,7 @@
             clear();
 
 	    // bicluster   
-            if(target.data.type== "bicluster") { 
+            if(target.data.type == "bicluster") { 
 	        svglink=target.data["url"];
                 svglink=svglink.replace("htmls" , "svgs").replace("html", "svgz");
 		print( "<b class=\"ex\">" + "Name : " + "</b>" + target.data.canonicalName + " | " +
@@ -546,7 +546,7 @@
 	    }
     
 	    // gene 
-            if(target.data.type =="gene" ) {
+            if(target.data.type == "gene" ) {
                 print("<b class=\"ex\">" + "Node Type : " + "</b>"+ target.data.type + "<p>");
                 print("<hr>");
                 print("<ul>");
@@ -672,7 +672,8 @@
             }
             
 	    //AND-GATE
-            if(target.data["Matching.Attribute"]) {
+            //if(target.data["Matching.Attribute"]) {
+            if(target.data["logic.gate"]) {
                 print("<b class=\"ex\">" + "Type : " + "</b>"+ "Logic gate" + "<p>");
                 print("<ul>");
                 print("<li>" + "<b class=\"ex\">" + "Name : " + "</b>" + target.data.canonicalName + "</li></ul>" + "<p>");

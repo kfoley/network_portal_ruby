@@ -73,16 +73,12 @@ $(document).ready(function() {
 	    }
 	}).bind({
 	    slidechange : function(event, ui) {
-	                  //console.debug("resid val = " + ui.value);
 	                  vis.filter("nodes", function(node) { return node.data.resid <= ui.value; }, false );
 			  //vis.layout('Preset');
 			  //vis.visualStyle();
 	    }
 	});
 	$("#residual").val($("#slider-residual").slider("value"));
-	//$("#residual").change(function() {
-	//    $("#slider-residual").slider("value", $("#residual").val());
-	//});
 
 	$("#slider-weight").slider({
 	    value: 0,
@@ -101,14 +97,10 @@ $(document).ready(function() {
 	    }
 	});
 	$("#weight").val($("#slider-weight").slider("value"));
-	//$("#weight").change(function() {
-	//   $("#slider-weight").slider("value", $("#weight").val());
-	//});
 
 	$("#reset_residual").click(function() {
 	    $("#slider-residual").slider( { value: 0.4 } );
 	    vis.filter("nodes", function(node) { return lookup[node.data.id] == "true"; } );
-	    //vis.removeFilter("nodes", false);
 	});
 
 	$("#reset_weight").click(function() {
@@ -142,7 +134,6 @@ $(document).ready(function() {
 
 	$("#reset_all").click(function() {
 	    vis.filter("nodes", function(node) { return lookup[node.data.id] == "true"; } );
-	    //vis.removeFilter("edges", false);
 	});
 
 	$("input:button, a, button", "#filter-section").button();
