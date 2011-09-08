@@ -382,30 +382,30 @@ to make the following work how we'd like */
     width: 600px;
 }
 
-#residual, #weight {
+#residual, #weight, #residual2, #weight2 {
     border: 0px;
     color: #f6931f;
     font-weight: bold;
     background: none;
 }
 
-#filter-section {
+#filter-section, #filter-section2 {
     margin-top: 10px;
     padding-top: 10px;
     background-color: white;
 }
 
-#filter-1 {
+#filter-1, #filter-3 {
     width: 300px;
 }
 
-#filter-2 {
+#filter-2, #filter-4 {
     width: 365px;
     position: relative;
     left: 250px;
     top: -20px;
 }
 
-#filter-2 input.ui-button {
+#filter-2 input.ui-button, #filter-4 input.ui-button {
     font-size: 12px;
 }
